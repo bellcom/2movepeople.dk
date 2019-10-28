@@ -51,24 +51,6 @@
   flex-grow: 1;
 }
 
-.view-decreto-organisation-list {
-
-  .views-row {
-    border-bottom: 1px solid $border-color;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-}
-
-.view-user-search {
-
-  .entity-list {
-    border-bottom: 1px solid $border-color;
-  }
-}
-
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------

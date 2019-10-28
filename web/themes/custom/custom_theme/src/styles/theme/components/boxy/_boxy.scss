@@ -45,24 +45,6 @@
   background-color: inherit;
 }
 
-.boxy {
-
-  .helper {
-    position: absolute;
-
-    top: 26px;
-    right: $boxy-spacing-left-right;
-  }
-}
-
-.boxy {
-
-  // For the .helper element.
-  .contextual-region.view {
-    position: initial;
-  }
-}
-
 .boxy__body + .boxy__actions,
 .view .boxy__actions {
   margin-top: $grid-gutter-width;
@@ -88,27 +70,7 @@
   }
 
   &.boxy--background-color-primary {
-    margin-bottom: 0;
-
-    @include border-bottom-radius(0);
-
-    background-color: #D4EBE7;
-
-    .boxy__heading__title {
-      color: #32424C;
-    }
-
-    label {
-      color: $brand-tertiary;
-    }
-
-    .form-control {
-      border-color: #A5B8B6;
-    }
-
-    .btn-success {
-      @extend .btn-primary;
-    }
+    background-color: $brand-primary;
   }
 
   &.boxy--background-color-secondary {
@@ -121,58 +83,6 @@
 
   &.boxy--background-color-quaternary {
     background-color: $brand-quaternary;
-  }
-
-  &.boxy--members {
-    padding: 0;
-
-    background-color: transparent;
-
-    .boxy__heading {
-      padding-top: 0;
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    .boxy__heading__title {
-      font-size: $font-size-small;
-      text-transform: uppercase;
-      font-weight: $font-weight-bold;
-
-      color: $headings-color-light;
-    }
-
-    .boxy__body {
-      padding-top: floor( ($boxy-body-spacing-top-bottom * 1.5) );
-      padding-bottom: floor( ($boxy-body-spacing-top-bottom * 1.5) );
-
-      background-color: $brand-primary;
-
-      ol {
-        margin-bottom: 0;
-
-        li {
-          padding: 3px 0;
-        }
-      }
-    }
-
-    .boxy__footer {
-      padding-left: 0;
-      padding-right: 0;
-      padding-bottom: 0;
-
-      text-align: center;
-
-      .btn-link {
-        padding: 0;
-
-        font-weight: $font-weight;
-        text-decoration: underline;
-
-        color: $text-color-light;
-      }
-    }
   }
 }
 

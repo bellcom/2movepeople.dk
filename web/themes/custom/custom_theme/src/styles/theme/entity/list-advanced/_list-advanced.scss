@@ -96,39 +96,6 @@
   color: $headings-color-highlighted;
 }
 
-.view-decreto-memos {
-
-  .views-row {
-    border-bottom: 1px solid $border-color;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-}
-
-.view-decreto-notes {
-
-  .views-row {
-    border-bottom: 1px solid $border-color;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-}
-
-.view-decreto-notifications {
-
-  .views-row {
-    border-bottom: 1px solid $border-color;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-}
-
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------

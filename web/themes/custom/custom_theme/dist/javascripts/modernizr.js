@@ -1,6 +1,6 @@
 /*!
- * modernizr v3.7.1
- * Build https://modernizr.com/download?-arrow-contains-dataset-flexbox-history-svg-target-template-texttrackapi_track-touchevents-addtest-fnbind-printshiv-setclasses-testprop-dontmin
+ * modernizr v3.8.0
+ * Build https://modernizr.com/download?-arrow-contains-flexbox-history-svg-target-template-texttrackapi_track-touchevents-addtest-fnbind-printshiv-setclasses-testprop-dontmin
  *
  * Copyright (c)
  *  Faruk Ates
@@ -36,7 +36,7 @@
    */
   var ModernizrProto = {
     // The current version, dummy
-    _version: '3.7.1',
+    _version: '3.8.0',
 
     // Any settings that don't work as separate modules
     // can go in here as configuration.
@@ -157,8 +157,8 @@
           if (featureNameSplit.length === 1) {
             Modernizr[featureNameSplit[0]] = result;
           } else {
-            // cast to a Boolean, if not one already
-            if (Modernizr[featureNameSplit[0]] && !(Modernizr[featureNameSplit[0]] instanceof Boolean)) {
+            // cast to a Boolean, if not one already or if it doesnt exist yet (like inputtypes)
+            if (!Modernizr[featureNameSplit[0]] || Modernizr[featureNameSplit[0]] && !(Modernizr[featureNameSplit[0]] instanceof Boolean)) {
               Modernizr[featureNameSplit[0]] = new Boolean(Modernizr[featureNameSplit[0]]);
             }
 
@@ -1312,12 +1312,12 @@
     var afterInit, i, propsLength, prop, before;
 
     // If we don't have a style element, that means we're running async or after
-    // the core tests, so we'll need to create our own elements to use
+    // the core tests, so we'll need to create our own elements to use.
 
-    // inside of an SVG element, in certain browsers, the `style` element is only
+    // Inside of an SVG element, in certain browsers, the `style` element is only
     // defined for valid tags. Therefore, if `modernizr` does not have one, we
     // fall back to a less used element and hope for the best.
-    // for strict XHTML browsers the hardly used samp element is used
+    // For strict XHTML browsers the hardly used samp element is used.
     var elems = ['modernizr', 'tspan', 'samp'];
     while (!mStyle.style && elems.length) {
       afterInit = true;
@@ -1580,6 +1580,7 @@ Detects support for SVG in `<embed>` or `<object>` elements.
     "href": "https://www.w3.org/TR/2013/WD-touch-events-20130124/"
   }],
   "warnings": [
+    "** DEPRECATED see https://github.com/Modernizr/Modernizr/pull/2432 **",
     "Indicates if the browser supports the Touch Events spec, and does not necessarily reflect a touchscreen device"
   ],
   "knownBugs": [
@@ -1855,6 +1856,12 @@ Detects support for the History API for manipulating the browser session history
     // Unfortunately support is really buggy and there is no clean way to detect
     // these bugs, so we fall back to a user agent sniff :(
     var ua = navigator.userAgent;
+    
+    // Some browsers allow to have empty userAgent.
+    // Therefore, we need to check ua before using "indexOf" on it.
+    if(!ua) {
+      return false;
+    }
 
     // We only want Android 2 and 4.0, stock browser, and not Chrome which identifies
     // itself as 'Mobile Safari' as well, nor Windows Phone (issue #1471).
@@ -1905,24 +1912,6 @@ Detects support for the ':target' CSS pseudo-class.
     } catch (e) {
       return false;
     }
-  });
-
-/*!
-{
-  "name": "dataset API",
-  "caniuse": "dataset",
-  "property": "dataset",
-  "tags": ["dom"],
-  "builderAliases": ["dom_dataset"],
-  "authors": ["@phiggins42"]
-}
-!*/
-
-  // dataset API for data-* attributes
-  Modernizr.addTest('dataset', function() {
-    var n = createElement('div');
-    n.setAttribute('data-a-b', 'c');
-    return !!(n.dataset && n.dataset.aB === 'c');
   });
 
 /*!

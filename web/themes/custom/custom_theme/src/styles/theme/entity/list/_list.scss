@@ -26,14 +26,6 @@
   padding: 12px 0;
 
   align-items: center;
-
-  &:after {
-    @extend .material-icons;
-
-    content: "keyboard_arrow_right";
-
-    font-size: inherit;
-  }
 }
 
 .entity-list__heading {}
@@ -57,61 +49,6 @@
 
 .entity-list__content {
   flex-grow: 1;
-}
-
-.view-decreto-organisations {
-
-  .views-row {
-    border-bottom: 1px solid $border-color;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-}
-
-.view-decreto-locations {
-
-  .views-row {
-    border-bottom: 1px solid $border-color;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-}
-
-.view-decreto-user-departments {
-
-  .views-row {
-    border-bottom: 1px solid $border-color;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-}
-
-.view-decreto-departments {
-
-  .views-row {
-    border-bottom: 1px solid $border-color;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-}
-
-.view-decreto-users {
-
-  .views-row {
-    border-bottom: 1px solid $border-color;
-
-    &:last-child {
-      border-bottom: none;
-    }
-  }
 }
 
 // --------------------------------------------------
