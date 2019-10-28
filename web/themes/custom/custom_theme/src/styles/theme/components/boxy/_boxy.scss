@@ -1,0 +1,211 @@
+// |--------------------------------------------------------------------------
+// | Boxy
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .boxy
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+@mixin boxy-mixin() {}
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.boxy {
+  position: relative;
+
+  padding: 15px 0;
+
+  background-color: $body-bg-secondary;
+  border-radius: $border-radius-base;
+
+  .boxy {
+    margin-left: floor( ( 0 - $boxy-spacing-left-right ) );
+    margin-right: floor( ( 0 - $boxy-spacing-left-right ) );
+
+    border-radius: 0;
+  }
+}
+
+.boxy__heading {}
+.boxy__heading__title {
+  font-weight: $headings-font-weight-bold;
+}
+
+.boxy__body {
+  background-color: inherit;
+}
+
+.boxy {
+
+  .helper {
+    position: absolute;
+
+    top: 26px;
+    right: $boxy-spacing-left-right;
+  }
+}
+
+.boxy {
+
+  // For the .helper element.
+  .contextual-region.view {
+    position: initial;
+  }
+}
+
+.boxy__body + .boxy__actions,
+.view .boxy__actions {
+  margin-top: $grid-gutter-width;
+}
+.boxy__actions {
+  text-align: right;
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+.boxy {
+
+  &.boxy--background-color-transparent {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  &.boxy--background-color-body-bg-secondary {
+    background-color: $body-bg-secondary;
+  }
+
+  &.boxy--background-color-primary {
+    margin-bottom: 0;
+
+    @include border-bottom-radius(0);
+
+    background-color: #D4EBE7;
+
+    .boxy__heading__title {
+      color: #32424C;
+    }
+
+    label {
+      color: $brand-tertiary;
+    }
+
+    .form-control {
+      border-color: #A5B8B6;
+    }
+
+    .btn-success {
+      @extend .btn-primary;
+    }
+  }
+
+  &.boxy--background-color-secondary {
+    background-color: $brand-secondary;
+  }
+
+  &.boxy--background-color-tertiary {
+    background-color: $brand-tertiary;
+  }
+
+  &.boxy--background-color-quaternary {
+    background-color: $brand-quaternary;
+  }
+
+  &.boxy--members {
+    padding: 0;
+
+    background-color: transparent;
+
+    .boxy__heading {
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .boxy__heading__title {
+      font-size: $font-size-small;
+      text-transform: uppercase;
+      font-weight: $font-weight-bold;
+
+      color: $headings-color-light;
+    }
+
+    .boxy__body {
+      padding-top: floor( ($boxy-body-spacing-top-bottom * 1.5) );
+      padding-bottom: floor( ($boxy-body-spacing-top-bottom * 1.5) );
+
+      background-color: $brand-primary;
+
+      ol {
+        margin-bottom: 0;
+
+        li {
+          padding: 3px 0;
+        }
+      }
+    }
+
+    .boxy__footer {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+
+      text-align: center;
+
+      .btn-link {
+        padding: 0;
+
+        font-weight: $font-weight;
+        text-decoration: underline;
+
+        color: $text-color-light;
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media #{$breakpoint-mobile-and-up} {}
+
+// Mobile - only
+@media #{$breakpoint-mobile-only} {}
+
+// Tablet - and up
+@media #{$breakpoint-tablet-and-up} {}
+
+// Tablet - only
+@media #{$breakpoint-tablet-only} {}
+
+// Desktop - and up
+@media #{$breakpoint-desktop-and-up} {}
+
+// Desktop - only
+@media #{$breakpoint-desktop-only} {}
+
+// Large desktop - and up
+@media #{$breakpoint-large-desktop-and-up} {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}

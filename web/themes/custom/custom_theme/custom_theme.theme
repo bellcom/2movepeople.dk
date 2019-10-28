@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function custom_theme_preprocess_html(array &$variables) {}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function custom_theme_preprocess_page(array &$variables) {}
+
+/*
+ * Implements hook_preprocess_paragraph().
+ */
+function custom_theme_preprocess_paragraph(&$variables) {}
+
+
+/**
+ * Implements template_preprocess_taxonomy_term().
+ */
+function custom_theme_preprocess_taxonomy_term(&$variables) {}
+
+/*
+ * Implements hook_theme_suggestions_taxonomy_term_alter().
+ */
+function custom_theme_theme_suggestions_taxonomy_term_alter(
+  &$suggestions,
+  $variables,
+  $hook
+) {
+  $suggestions[] = 'taxonomy_term__' . $variables['elements']['#taxonomy_term']->getVocabularyId() . '__' . $variables['elements']['#view_mode'];
+  $suggestions[] = 'taxonomy_term__' . $variables['elements']['#view_mode'];
+}
+
+/**
+ * Implement hook_preprocess_block()
+ */
+function custom_theme_preprocess_block(&$variables) {
+  $id = $variables['elements']['#id'];
+  $variables['content']['#attributes']['block'] = $id;
+}
+
+/**
+ * Implements template_proprocess_node().
+ */
+function custom_theme_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  $user = $node->getOwner();
+}
+
+
+/**
+ * Implements template_preprocess_user().
+ */
+function custom_theme_preprocess_user(&$variables) {
+  $user = $variables['user'];
+  $view_mode = $variables['elements']['#view_mode'];
+  $variables['url'] = $user->toUrl();
+}

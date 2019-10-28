@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * Default theme implementation for decreto_notification entities.
+ *
+ * Available variables:
+ * - $content: An array of comment items. Use render($content) to print them all, or
+ *   print a subset such as render($content['field_example']). Use
+ *   hide($content['field_example']) to temporarily suppress the printing of a
+ *   given element.
+ * - $title: The (sanitized) entity label.
+ * - $date: Date string, if date is today - time is shown, if not only date it shown.
+ * - $department: Department title.
+ * - $url: URL to notification resolver path.
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_decreto_notification()
+ * @see template_process()
+ */
+#}
+<a href="{{ url }}"
+   class="entity-list-advanced entity-list-advanced--notification {{ content['#unread'] ? 'entity-list-advanced--unread' : 'entity-list-advanced--read' }}">
+
+  <!-- Begin - content -->
+  <div class="entity-list-advanced__content">
+    <!-- Begin - heading -->
+    <div class="entity-list-advanced__heading">
+      <h4 class="entity-list-advanced__heading__title">
+        {{ content }}
+      </h4>
+    </div>
+    <!-- End - heading -->
+
+    <!-- Begin - footer -->
+    <div class="entity-list-advanced__footer">
+      {{ department }}
+    </div>
+    <!-- End - footer -->
+
+  </div>
+  <!-- End - content -->
+
+  <!-- Begin - published at -->
+  <div class="entity-list-advanced__published-at">
+    {{ date }}
+  </div>
+  <!-- End - published at -->
+
+</a>

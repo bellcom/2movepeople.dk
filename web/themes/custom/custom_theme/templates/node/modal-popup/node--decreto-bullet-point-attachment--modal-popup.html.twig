@@ -1,0 +1,19 @@
+{%
+  set classes = [
+    'boxy',
+    node.bundle|clean_class,
+    node.isPromoted() ? 'is-promoted',
+    node.isSticky() ? 'is-sticky',
+    not node.isPublished() ? 'is-unpublished',
+    view_mode ? view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+<article{{ attributes.addClass(classes) }}>
+
+  <div{{ content_attributes.addClass('content','boxy__body').setAttribute('id', 'bpa-content-' ~ node.id) }}>
+    <div class="annotate-content">
+      {{ content }}
+    </div>
+  </div>
+</article>

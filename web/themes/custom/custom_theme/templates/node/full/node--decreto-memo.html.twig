@@ -1,0 +1,40 @@
+<a href="{{ content['#path'] }}" class="element-wrapper-link entity-list-advanced entity-list-advanced--memo">
+  {% if display_submitted %}
+    <!-- Begin - icon -->
+    <div class="entity-list-advanced__icon">
+          <span class="initial-icon initial-icon" data-toggle="tooltip" title="{{ user_name }}">
+            {{ user_initials }}
+          </span>
+    </div>
+    <!-- End - icon -->
+  {% endif %}
+
+  <!-- Begin - content -->
+  <div class="entity-list-advanced__content">
+
+    {{ title_prefix }}
+    <!-- Begin - heading -->
+    <div class="entity-list-advanced__heading">
+      <h2{{ title_attributes.addClass('entity-list-advanced__heading__title') }}>
+        {{ label }}
+      </h2>
+    </div>
+    <!-- End - heading -->
+    {{ title_suffix }}
+
+    <!-- Begin - body -->
+    <div class="entity-list-advanced__body">
+      {{ content }}
+    </div>
+    <!-- End - body -->
+
+  </div>
+  <!-- End - content -->
+
+  <!-- Begin - published at -->
+  <div class="entity-list-advanced__published-at">
+    {{ date }}
+  </div>
+  <!-- End - published at -->
+
+</a>

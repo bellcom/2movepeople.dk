@@ -1,0 +1,128 @@
+// |--------------------------------------------------------------------------
+// | Button checkbox
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .btn-checkbox
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+@mixin form-mixin() {}
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.btn-checkbox {
+  position: relative;
+
+  padding-left: 20px !important;
+  margin-bottom: $form-group-margin-bottom;
+
+  font-size: $font-size-small;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    //margin-left: -20px;
+    border: 1px solid $input-border;
+    border-radius: 3px;
+    background-color: $input-bg;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  }
+
+  &:after {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0;
+    //margin-left: -20px;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-size: 11px;
+    color: #555555;
+  }
+}
+.btn-checkbox--active {
+
+  &:before {
+    border-color: $input-border-focus;
+  }
+
+  &:after {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    color: $brand-tertiary;
+  }
+}
+
+.btn.btn-checkbox {
+
+  // Remove stylings inherited by .btn.
+  &.btn {
+    min-width: initial;
+    padding: 0;
+
+    border: 0 !important;
+
+    font-weight: initial;
+
+    &, &:hover, &:focus {
+      outline: 0;
+
+      color: $text-color-light !important;
+      background-color: transparent !important;
+    }
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media #{$breakpoint-mobile-and-up} {}
+
+// Mobile - only
+@media #{$breakpoint-mobile-only} {}
+
+// Tablet - and up
+@media #{$breakpoint-tablet-and-up} {}
+
+// Tablet - only
+@media #{$breakpoint-tablet-only} {}
+
+// Desktop - and up
+@media #{$breakpoint-desktop-and-up} {}
+
+// Desktop - only
+@media #{$breakpoint-desktop-only} {}
+
+// Large desktop - and up
+@media #{$breakpoint-large-desktop-and-up} {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}
