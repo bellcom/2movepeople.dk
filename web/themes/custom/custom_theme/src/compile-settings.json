@@ -5,7 +5,6 @@
     "node_modules/flexy-navigation/javascripts/flexy-navigation.js",
     "node_modules/sidr/dist/jquery.sidr.js",
     "node_modules/pace-progress/pace.js",
-    "src/javascripts/bulletpoint.js",
     "src/javascripts/app.js"
   ],
   "styles": [
