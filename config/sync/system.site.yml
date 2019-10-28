@@ -1,0 +1,14 @@
+uuid: 3c0e644c-4061-4329-a4cb-8af35bbae4ae
+name: 2movepeople.dk
+mail: mn@bellcom.dk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: da
+default_langcode: da
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
