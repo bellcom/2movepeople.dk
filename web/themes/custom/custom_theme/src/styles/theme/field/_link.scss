@@ -1,5 +1,5 @@
 // |--------------------------------------------------------------------------
-// | Button
+// | Link
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
@@ -20,22 +20,11 @@
 // Styling
 // --------------------------------------------------
 
-.btn {
-  padding-left: 30px;
-  padding-right: 30px;
-}
+.field--name-field-link {
 
-.btn-primary {
-  color: #fff;
-  background: linear-gradient(90deg, #EA4B8F 0%, #8A2E88 100%);
-  box-shadow: 0 7px 10px rgba(216, 98, 171, .3);
-
-  transition: all ease-in-out .2s;
-
-  &:hover,
-  &:active {
-    background: linear-gradient(90deg, #C23B8E 0%, #6B1869 100%);
-    box-shadow: 0 7px 10px rgba(213, 63, 143, .6);
+  a {
+    @extend .btn;
+    @extend .btn-primary;
   }
 }
 

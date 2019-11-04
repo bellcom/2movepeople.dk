@@ -1,0 +1,39 @@
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+] %}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+
+      <div class="line"></div>
+
+      <div class="container-fluid">
+
+        {# Begin - heading #}
+        {{ content.field_heading }}
+        {# End - heading #}
+
+        <!-- Begin - embedded view -->
+        <div class="grid grid--gutter-15">
+          {{ content.embedded_view }}
+        </div>
+        <!-- End - embedded view -->
+
+        {# Begin - links #}
+        {% if paragraph.field_links.value %}
+          <div class="grid grid--gutter-15">
+            <div class="grid__items">
+              {{ content.field_links }}
+            </div>
+          </div>
+        {% endif %}
+        {# End - links #}
+
+      </div>
+
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

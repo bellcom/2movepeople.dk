@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Button
+// | Paragraphs
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .btn
+// | - .paragraphs
 // |
 
 // --------------------------------------------------
@@ -14,28 +14,27 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin typography-mixin() {}
+@mixin paragraphs-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.btn {
-  padding-left: 30px;
-  padding-right: 30px;
-}
+.paragraph {
+  position: relative;
 
-.btn-primary {
-  color: #fff;
-  background: linear-gradient(90deg, #EA4B8F 0%, #8A2E88 100%);
-  box-shadow: 0 7px 10px rgba(216, 98, 171, .3);
+  min-height: 100vh;
 
-  transition: all ease-in-out .2s;
+  .line {
+    display: none;
+    position: absolute;
 
-  &:hover,
-  &:active {
-    background: linear-gradient(90deg, #C23B8E 0%, #6B1869 100%);
-    box-shadow: 0 7px 10px rgba(213, 63, 143, .6);
+    top: 0;
+    bottom: 0;
+
+    width: 1px;
+
+    background-color: $brand-primary;
   }
 }
 
@@ -60,13 +59,39 @@
 @media #{$breakpoint-tablet-only} {}
 
 // Desktop - and up
-@media #{$breakpoint-desktop-and-up} {}
+@media #{$breakpoint-desktop-and-up} {
+
+  .paragraph {
+
+    .line {
+      display: block;
+    }
+  }
+}
 
 // Desktop - only
-@media #{$breakpoint-desktop-only} {}
+@media #{$breakpoint-desktop-only} {
+
+  .paragraph {
+    padding-left: $sticky-navigation-height--md;
+
+    .line {
+      left: $sticky-navigation-height--md;
+    }
+  }
+}
 
 // Large desktop - and up
-@media #{$breakpoint-large-desktop-and-up} {}
+@media #{$breakpoint-large-desktop-and-up} {
+
+  .paragraph {
+    padding-left: $sticky-navigation-height--lg;
+
+    .line {
+      left: $sticky-navigation-height--lg;
+    }
+  }
+}
 
 // Print
 @media print {}

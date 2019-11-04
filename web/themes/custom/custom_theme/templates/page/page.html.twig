@@ -60,56 +60,32 @@
 
     <!-- Begin - content -->
     <div class="page-content">
-      <div class="container-fluid">
-        <a id="main-content"></a>
+      <a id="main-content"></a>
 
-        {# Highlighted #}
-        {% if page.highlighted %}
-          {% block highlighted %}
-            <div class="highlighted">
-              {{ page.highlighted }}
-            </div>
-          {% endblock %}
-        {% endif %}
+      {# Highlighted #}
+      {% if page.highlighted %}
+        {% block highlighted %}
+          <div class="highlighted">
+            {{ page.highlighted }}
+          </div>
+        {% endblock %}
+      {% endif %}
 
-        {# Help #}
-        {% if page.help %}
-          {% block help %}
-            {{ page.help }}
-          {% endblock %}
-        {% endif %}
+      {# Help #}
+      {% if page.help %}
+        {% block help %}
+          {{ page.help }}
+        {% endblock %}
+      {% endif %}
 
-        {# Begin - content #}
-        {%
-          set content_classes = [
-          page.content__right_sidebar ? 'col-xs-12 col-lg-8',
-          page.content__right_sidebar is empty ? 'col-xs-12'
-        ]
-        %}
-        <div class="row">
-
-          {# Begin - content #}
-          {% block content %}
-            <div{{ content_attributes.addClass(content_classes) }}>
-              {{ page.content }}
-            </div>
-          {% endblock %}
-          {# End - content #}
-
-          {# Begin - sidebar right #}
-          {% if page.content__right_sidebar %}
-            {% block content__right_sidebar %}
-              <aside class="col-xs-12 col-lg-4" role="complementary">
-                {{ page.content__right_sidebar }}
-              </aside>
-            {% endblock %}
-          {% endif %}
-          {# End - sidebar right #}
-
+      {# Begin - content #}
+      {% block content %}
+        <div{{ content_attributes }}>
+          {{ page.content }}
         </div>
-        {# End - content #}
+      {% endblock %}
+      {# End - content #}
 
-      </div>
     </div>
     <!-- End - content -->
 
@@ -118,6 +94,7 @@
 
   <!-- Begin - footer -->
   <footer class="layout__footer">
+    <div class="line"></div>
 
     {% if page.footer %}
       {% block footer %}

@@ -66,13 +66,26 @@
 @media #{$breakpoint-tablet-only} {}
 
 // Desktop - and up
-@media #{$breakpoint-desktop-and-up} {}
+@media #{$breakpoint-desktop-and-up} {
+
+  .flexy-header__logo {
+    width: $sticky-navigation-height--md;
+    margin-left: (0 - ($grid-gutter-width / 2));
+
+    text-align: center;
+  }
+}
 
 // Desktop - only
 @media #{$breakpoint-desktop-only} {}
 
 // Large desktop - and up
-@media #{$breakpoint-large-desktop-and-up} {}
+@media #{$breakpoint-large-desktop-and-up} {
+
+  .flexy-header__logo {
+    width: $sticky-navigation-height--lg;
+  }
+}
 
 // Print
 @media print {}

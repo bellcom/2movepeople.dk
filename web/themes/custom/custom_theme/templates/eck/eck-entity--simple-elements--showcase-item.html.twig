@@ -1,0 +1,42 @@
+{% set classes = [
+  'layout__segment',
+  'layout__segment--grey',
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  <div class="layout__container">
+    <div class="banner">
+      <div class="banner__box">
+        <div class="banner__body">
+
+          SHOWCASE ITEM
+
+          {# Begin - type #}
+          {% if content.field_type %}
+            <div class="banner__prefix">
+              {{ content.field_type }}
+            </div>
+          {% endif %}
+          {# End - type #}
+
+          <h2 class="banner__title">{{ content.field_heading }}</h2>
+
+          {# Begin - body #}
+          {% if content.field_description %}
+            <div class="banner__text">
+              {{ content.field_description }}
+            </div>
+          {% endif %}
+          {# End - body #}
+
+          {% if content.field_link %}
+            <div class="banner__button">
+              {{ content.field_link }}
+            </div>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
