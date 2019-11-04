@@ -20,21 +20,7 @@
 // Styling
 // --------------------------------------------------
 
-.flexy-header {
-
-  .poppy {
-
-    + .poppy {
-      margin-left: floor( ($grid-gutter-width / 2) );
-    }
-  }
-}
-
-.flexy-header--static {
-  margin-bottom: $grid-gutter-width;
-
-  border-bottom: 1px solid $border-color;
-}
+.flexy-header {}
 
 .flexy-header__sidebar-toggle {
   border: 0;
@@ -45,6 +31,23 @@
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
+
+.flexy-header--static {
+  margin-bottom: $grid-gutter-width;
+
+  border-bottom: 1px solid $border-color;
+}
+
+.flexy-header--pinned {
+
+  .toolbar-horizontal.toolbar-fixed & {
+    top: 39px;
+  }
+
+  .toolbar-horizontal.toolbar-fixed.toolbar-tray-open & {
+    top: 79px;
+  }
+}
 
 // --------------------------------------------------
 // Responsive

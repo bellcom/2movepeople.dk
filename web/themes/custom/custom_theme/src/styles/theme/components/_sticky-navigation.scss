@@ -1,0 +1,162 @@
+// |--------------------------------------------------------------------------
+// | Sidebar narrow.
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .sticky-navigation
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+$sticky-navigation-height--md: 130px;
+$sticky-navigation-height--lg: 140px;
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+@mixin sticky-navigation-mixin() {}
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.sticky-navigation {
+  position: fixed;
+
+  transform-origin: left top;
+  transform: rotate(-90deg);
+
+  z-index: $zindex-navbar;
+
+  .toolbar-horizontal.toolbar-fixed & {
+    top: 39px;
+  }
+
+  .toolbar-horizontal.toolbar-fixed.toolbar-tray-open & {
+    top: 79px;
+  }
+
+  ul {
+    padding-left: 0;
+    margin: 0;
+
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      padding: 0 30px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  a {
+    display: block;
+
+    padding: 0 20px; // Add padding here for fat fingers.
+
+    font-size: $font-size-large;
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+.sticky-navigation--left {
+  left: 0;
+}
+
+.sticky-navigation--right {
+  right: 0;
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media #{$breakpoint-mobile-and-up} {}
+
+// Mobile - only
+@media #{$breakpoint-mobile-only} {
+
+  .sticky-navigation {
+    display: none;
+  }
+}
+
+// Tablet - and up
+@media #{$breakpoint-tablet-and-up} {}
+
+// Tablet - only
+@media #{$breakpoint-tablet-only} {
+
+  .sticky-navigation {
+    display: none;
+  }
+}
+
+// Desktop - and up
+@media #{$breakpoint-desktop-and-up} {
+
+  .sticky-navigation--left {
+    top: 400px;
+
+    .toolbar-horizontal.toolbar-fixed & {
+      top: 39px + 400px;
+    }
+
+    .toolbar-horizontal.toolbar-fixed.toolbar-tray-open & {
+      top: 79px + 400px;
+    }
+
+    a {
+      min-height: $sticky-navigation-height--md;
+      line-height: $sticky-navigation-height--md;
+    }
+  }
+}
+
+// Desktop - only
+@media #{$breakpoint-desktop-only} {}
+
+// Large desktop - and up
+@media #{$breakpoint-large-desktop-and-up} {
+
+  .sticky-navigation--left {
+    top: 500px;
+
+    .toolbar-horizontal.toolbar-fixed & {
+      top: 39px + 500px;
+    }
+
+    .toolbar-horizontal.toolbar-fixed.toolbar-tray-open & {
+      top: 79px + 500px;
+    }
+
+    a {
+      min-height: $sticky-navigation-height--lg;
+      line-height: $sticky-navigation-height--lg;
+    }
+  }
+}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}

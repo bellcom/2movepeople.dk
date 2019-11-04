@@ -10,8 +10,6 @@
 // Variables
 // --------------------------------------------------
 
-$layout-sidebar-width: 300px;
-
 // Responsive
 $xs-layout-content-padding-bottom: $grid-gutter-width;
 $sm-layout-content-padding-bottom: $grid-gutter-width;
@@ -37,34 +35,57 @@ body {
   margin-top: 0 !important;
 }
 
-.layout__wrapper {
-  min-height: 100%;
-}
-
-.layout__sidebar {
-  display: none;
-
-  background-color: $body-bg-secondary;
-}
-
-.layout__sidebar__logo {
-  display: block;
-
-  padding: 20px 0;
-
-  text-align: center;
-
-  img {
-    max-width: floor( ($layout-sidebar-width - $grid-gutter-width) );
-  }
-
-  + .region-sidebar {
-    margin-top: floor( ($grid-gutter-width / 2) );
-  }
-}
-
 .layout__content {
   padding-bottom: $xs-layout-content-padding-bottom;
+}
+
+.layout__footer {
+  background-color: $brand-primary;
+
+  .form-type-webform-markup {
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: $headings-font-weight-bold;
+
+      color: #fff;
+    }
+
+    h2 {
+      font-size: $font-size-h1;
+    }
+
+    + .wrapper {
+      margin-top: 20px;
+    }
+  }
+
+  .form-control {
+    @extend .input-lg;
+  }
+
+  .webform-actions {
+
+    .btn {
+      @extend .btn-block;
+      @extend .btn-lg;
+    }
+  }
+
+  .flexy-list {
+
+    > * {
+      padding: 0 10px 0 0;
+    }
+  }
+}
+.layout__footer-row {}
+.layout__footer-row--first {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.layout__footer-row--second {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 // --------------------------------------------------
@@ -95,24 +116,27 @@ body {
 // Desktop - and up
 @media #{$breakpoint-desktop-and-up} {
 
-  .layout__wrapper {
-    display: flex;
+  .layout__footer {
 
-    flex-wrap: nowrap;
-    flex-grow: 1;
-    flex-direction: row;
+    .form-type-webform-markup {
+
+      + .wrapper {
+        margin-top: 70px;
+      }
+    }
+
+    .wrapper {
+      padding-left: 170px;
+    }
   }
 
-  .layout__sidebar,
-  .layout__content {
-    min-height: 100vh;
+  .layout__footer-row--first {
+    padding-top: 150px;
+    padding-bottom: 70px;
   }
-
-  .layout__sidebar {
-    display: block;
-
-    flex-shrink: 0;
-    flex-basis: $layout-sidebar-width;
+  .layout__footer-row--second {
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
 

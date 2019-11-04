@@ -1,7 +1,7 @@
 fonts:
   css:
     base:
-      'https://fonts.googleapis.com/css?family=Roboto:400,700': { type: external }
+      'https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap': { type: external }
 
 styles:
   css:

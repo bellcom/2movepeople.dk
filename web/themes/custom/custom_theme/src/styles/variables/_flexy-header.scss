@@ -3,8 +3,8 @@ $flexy-header-static-background-color: transparent;
 
 // Sticky
 $flexy-header-sticky-zindex: $zindex-navbar !default;
-$flexy-header-sticky-background-color: rgba($body-bg-secondary, .95);
-$flexy-header-sticky-unpinned-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15) !default;
+$flexy-header-sticky-background-color: transparent;
+$flexy-header-sticky-unpinned-box-shadow: none;
 
 // Responsive (static)
 $xs-flexy-header-static-row-height: 70px;

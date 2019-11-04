@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Typography
+// | Button
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .layout__content
+// | - .btn
 // |
 
 // --------------------------------------------------
@@ -20,80 +20,23 @@
 // Styling
 // --------------------------------------------------
 
-h1, h2, h3, h4, h5, h6 {
+.btn {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
-  a {
-    color: $headings-color-highlighted;
+.btn-primary {
+  color: #fff;
+  background: linear-gradient(90deg, #EA4B8F 0%, #8A2E88 100%);
+  box-shadow: 0 7px 10px rgba(216, 98, 171, .3);
 
-    &:hover {
-      color: darken($headings-color-highlighted, 5%);
-    }
+  transition: all ease-in-out .2s;
+
+  &:hover,
+  &:active {
+    background: linear-gradient(90deg, #EA4B8F 0%, #8A2E88 70%);
+    box-shadow: 0 7px 10px rgba(216, 98, 171, .5);
   }
-
-  .material-icons {
-    font-size: $font-size-large;
-
-    color: $text-color-light;
-  }
-}
-
-label {
-  font-size: $font-size-small;
-  text-transform: uppercase;
-
-  color: $headings-color-light;
-
-  .form-type-checkbox & {
-    text-transform: initial;
-  }
-}
-
-.help-block {
-  color: $text-color-light;
-}
-
-.text--with-icon {
-  display: flex;
-
-  align-items: center;
-
-  &,
-  a, a:hover, a:focus {
-    color: $headings-color;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
-  .material-icons {
-    min-width: 20px;
-
-    font-size: inherit;
-
-    color: $text-color-light;
-  }
-
-  + .text--with-icon {
-    margin-top: 3px;
-  }
-}
-
-.text--primary {
-  color: $headings-color-highlighted;
-}
-.text--secondary {
-  color: $brand-secondary;
-}
-.text--tertiary {
-  color: $brand-tertiary;
-}
-.text--light {
-  color: $text-color-light;
-}
-
-.text--size-extra-small {
-  font-size: $font-size-extra-small;
 }
 
 // --------------------------------------------------

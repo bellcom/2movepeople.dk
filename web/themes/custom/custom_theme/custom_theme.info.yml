@@ -7,16 +7,12 @@ base theme: custom_base_theme
 package: Custom
 
 regions:
-  sidr_left__primary: 'Sidr - left - primary navigation'
-  flexy_navigation__user: 'Flexy navigation - user navigation'
+  sidr_right__primary: 'Sidr - right - primary navigation'
+  sticky_navigation__left: 'Sticky navigation - left'
   highlighted: 'Highlighted'
   help: 'Help'
-  sidebar: 'Sidebar - desktop'
   content: 'Content'
-  content__right_sidebar: 'Content - right sidebar'
-  action_box__secondary: 'Action box - orange'
-  action_box__primary: 'Action box - blue'
-  action_box__tertiary: 'Action box - dark'
+  footer: 'Footer'
 
 libraries:
   - 'custom_theme/fonts'

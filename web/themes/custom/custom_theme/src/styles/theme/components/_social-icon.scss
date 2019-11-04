@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Typography
+// | Social icon.
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .layout__content
+// | - .social-icon
 // |
 
 // --------------------------------------------------
@@ -14,86 +14,43 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin typography-mixin() {}
+@mixin social-icon-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-h1, h2, h3, h4, h5, h6 {
-
-  a {
-    color: $headings-color-highlighted;
-
-    &:hover {
-      color: darken($headings-color-highlighted, 5%);
-    }
-  }
-
-  .material-icons {
-    font-size: $font-size-large;
-
-    color: $text-color-light;
-  }
-}
-
-label {
-  font-size: $font-size-small;
-  text-transform: uppercase;
-
-  color: $headings-color-light;
-
-  .form-type-checkbox & {
-    text-transform: initial;
-  }
-}
-
-.help-block {
-  color: $text-color-light;
-}
-
-.text--with-icon {
+.social-icon {
   display: flex;
 
+  justify-content: center;
   align-items: center;
 
-  &,
-  a, a:hover, a:focus {
-    color: $headings-color;
+  height: 40px;
+  width: 40px;
+
+  background-color: rgba(#fff, .6);
+
+  &, &:hover {
+    text-decoration: none;
   }
 
-  a {
-    text-decoration: underline;
+  .icon {
+    display: inline-block;
+
+    color: $brand-primary;
   }
 
-  .material-icons {
-    min-width: 20px;
-
-    font-size: inherit;
-
-    color: $text-color-light;
+  .pentagon {
+    position:absolute;
+    left: 0;
+    //top: 30px;
+    //bottom: 0;
+    //right: 0;
+    //margin: auto;
+    //
+    //@include pentagon(100);
   }
-
-  + .text--with-icon {
-    margin-top: 3px;
-  }
-}
-
-.text--primary {
-  color: $headings-color-highlighted;
-}
-.text--secondary {
-  color: $brand-secondary;
-}
-.text--tertiary {
-  color: $brand-tertiary;
-}
-.text--light {
-  color: $text-color-light;
-}
-
-.text--size-extra-small {
-  font-size: $font-size-extra-small;
 }
 
 // --------------------------------------------------
