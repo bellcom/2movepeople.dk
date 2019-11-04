@@ -41,6 +41,8 @@ $paragraph-inner-spacing-bottom-lg: 130px;
 
     a {
       @extend .btn-lg;
+
+      box-shadow: 0 7px 10px rgba(213, 63, 143, .6);
     }
   }
 
