@@ -87,6 +87,11 @@ $paragraph-inner-spacing-bottom-lg: 130px;
   animation-iteration-count: infinite;
   animation-duration: 15s;
   transition: ease-in-out;
+  transform: translate3d(0, 0, 0);
+
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000;
 }
 .pentagon--main {
   animation-duration: 12s;
@@ -148,114 +153,114 @@ $paragraph-inner-spacing-bottom-lg: 130px;
 // Pentagon main.
 @keyframes pentagon-main {
   0% {
-    transform: rotate(0deg) scale(1.0);
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1.0);
   }
   50% {
-    transform: rotate(-3deg) scale(1.05);
+    transform: translate3d(0, 0, 0) rotate(-3deg) scale(1.05);
   }
   100% {
-    transform: rotate(0deg) scale(1.0);
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1.0);
   }
 }
 
 // Pentagon children.
 @keyframes pentagon-child--1 {
   0% {
-    transform: rotate(11deg) scale(1.0);
+    transform: translate3d(0, 0, 0) rotate(11deg) scale(1.0);
   }
   50% {
-    transform: rotate(18deg) scale(0.95);
+    transform: translate3d(0, 0, 0) rotate(18deg) scale(0.95);
   }
   100% {
-    transform: rotate(11deg) scale(1.0);
+    transform: translate3d(0, 0, 0) rotate(11deg) scale(1.0);
   }
 }
 @keyframes pentagon-child--2 {
   0% {
-    transform: rotate(0deg) scale(1.1);
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1.1);
   }
   50% {
-    transform: rotate(12deg) scale(1.05);
+    transform: translate3d(0, 0, 0) rotate(12deg) scale(1.05);
   }
   100% {
-    transform: rotate(0deg) scale(1.1);
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1.1);
   }
 }
 @keyframes pentagon-child--3 {
   0% {
-    transform: rotate(-10deg) scale(1.15);
+    transform: translate3d(0, 0, 0) rotate(-10deg) scale(1.15);
   }
   50% {
-    transform: rotate(5deg) scale(1.25);
+    transform: translate3d(0, 0, 0) rotate(5deg) scale(1.25);
   }
   100% {
-    transform: rotate(-10deg) scale(1.15);
+    transform: translate3d(0, 0, 0) rotate(-10deg) scale(1.15);
   }
 }
 @keyframes pentagon-child--4 {
   0% {
-    transform: rotate(10deg) scale(1.20);
+    transform: translate3d(0, 0, 0) rotate(10deg) scale(1.20);
   }
   50% {
-    transform: rotate(22deg) scale(1.27);
+    transform: translate3d(0, 0, 0) rotate(22deg) scale(1.27);
   }
   100% {
-    transform: rotate(10deg) scale(1.20);
+    transform: translate3d(0, 0, 0) rotate(10deg) scale(1.20);
   }
 }
 @keyframes pentagon-child--5 {
   0% {
-    transform: rotate(17deg) scale(1.23);
+    transform: translate3d(0, 0, 0) rotate(17deg) scale(1.23);
   }
   50% {
-    transform: rotate(25deg) scale(1.25);
+    transform: translate3d(0, 0, 0) rotate(25deg) scale(1.25);
   }
   100% {
-    transform: rotate(17deg) scale(1.23);
+    transform: translate3d(0, 0, 0) rotate(17deg) scale(1.23);
   }
 }
 @keyframes pentagon-child--6 {
   0% {
-    transform: rotate(0deg) scale(1.27);
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1.27);
   }
   50% {
-    transform: rotate(8deg) scale(1.31);
+    transform: translate3d(0, 0, 0) rotate(8deg) scale(1.31);
   }
   100% {
-    transform: rotate(0deg) scale(1.27);
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1.27);
   }
 }
 @keyframes pentagon-child--7 {
   0% {
-    transform: rotate(7deg) scale(1.33);
+    transform: translate3d(0, 0, 0) rotate(7deg) scale(1.33);
   }
   50% {
-    transform: rotate(0deg) scale(1.25);
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1.25);
   }
   100% {
-    transform: rotate(7deg) scale(1.33);
+    transform: translate3d(0, 0, 0) rotate(7deg) scale(1.33);
   }
 }
 @keyframes pentagon-child--8 {
   0% {
-    transform: rotate(10deg) scale(1.37);
+    transform: translate3d(0, 0, 0) rotate(10deg) scale(1.37);
   }
   50% {
-    transform: rotate(14deg) scale(1.58);
+    transform: translate3d(0, 0, 0) rotate(14deg) scale(1.58);
   }
   100% {
-    transform: rotate(10deg) scale(1.37);
+    transform: translate3d(0, 0, 0) rotate(10deg) scale(1.37);
   }
 }
 @keyframes pentagon-child--9 {
   0% {
-    transform: rotate(1deg) scale(1.41);
+    transform: translate3d(0, 0, 0) rotate(1deg) scale(1.41);
   }
   50% {
-    transform: rotate(-7deg) scale(1.51);
+    transform: translate3d(0, 0, 0) rotate(-7deg) scale(1.51);
   }
   100% {
-    transform: rotate(1deg) scale(1.41);
+    transform: translate3d(0, 0, 0) rotate(1deg) scale(1.41);
   }
 }
 
