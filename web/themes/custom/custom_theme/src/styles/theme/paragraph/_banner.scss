@@ -31,6 +31,7 @@ $paragraph-inner-spacing-bottom-lg: 130px;
 
 .paragraph--type--banner {
   background-color: #eee;
+  background-image: url('../images/banner/background.png');
 
   .paragraph__inner {
     padding-top: $paragraph-inner-spacing-top-xs;
@@ -61,9 +62,202 @@ $paragraph-inner-spacing-bottom-lg: 130px;
   }
 }
 
+.animator {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  overflow: hidden;
+}
+.pentagon {
+  position: absolute;
+
+  top: -30px;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  transition: ease-in-out;
+}
+.pentagon--main {
+  animation-duration: 12s;
+  animation-name: pentagon-main;
+
+  background-image: url("../images/banner/pentagon-main.svg");
+}
+.pentagon--child {
+  background-image: url("../images/banner/pentagon-child.svg");
+}
+.pentagon--child-1 {
+  animation-name: pentagon-child--1;
+}
+.pentagon--child-2 {
+  animation-duration: 29s;
+
+  animation-name: pentagon-child--2;
+}
+.pentagon--child-3 {
+  animation-duration: 25s;
+
+  animation-name: pentagon-child--3;
+}
+.pentagon--child-4 {
+  animation-duration: 12s;
+
+  animation-name: pentagon-child--4;
+}
+.pentagon--child-5 {
+  animation-duration: 15s;
+
+  animation-name: pentagon-child--5;
+}
+.pentagon--child-6 {
+  animation-duration: 18s;
+
+  animation-name: pentagon-child--6;
+}
+.pentagon--child-7 {
+  animation-duration: 22s;
+
+  animation-name: pentagon-child--7;
+}
+.pentagon--child-8 {
+  animation-duration: 28s;
+
+  animation-name: pentagon-child--8;
+}
+.pentagon--child-9 {
+  animation-duration: 20s;
+
+  animation-name: pentagon-child--9;
+}
+
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
+
+// Pentagon main.
+@keyframes pentagon-main {
+  0% {
+    transform: rotate(0deg) scale(1.0);
+  }
+  50% {
+    transform: rotate(-3deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(0deg) scale(1.0);
+  }
+}
+
+// Pentagon children.
+@keyframes pentagon-child--1 {
+  0% {
+    transform: rotate(11deg) scale(1.0);
+  }
+  50% {
+    transform: rotate(18deg) scale(0.95);
+  }
+  100% {
+    transform: rotate(11deg) scale(1.0);
+  }
+}
+@keyframes pentagon-child--2 {
+  0% {
+    transform: rotate(0deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(12deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(0deg) scale(1.1);
+  }
+}
+@keyframes pentagon-child--3 {
+  0% {
+    transform: rotate(-10deg) scale(1.15);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.25);
+  }
+  100% {
+    transform: rotate(-10deg) scale(1.15);
+  }
+}
+@keyframes pentagon-child--4 {
+  0% {
+    transform: rotate(10deg) scale(1.20);
+  }
+  50% {
+    transform: rotate(22deg) scale(1.27);
+  }
+  100% {
+    transform: rotate(10deg) scale(1.20);
+  }
+}
+@keyframes pentagon-child--5 {
+  0% {
+    transform: rotate(17deg) scale(1.23);
+  }
+  50% {
+    transform: rotate(25deg) scale(1.25);
+  }
+  100% {
+    transform: rotate(17deg) scale(1.23);
+  }
+}
+@keyframes pentagon-child--6 {
+  0% {
+    transform: rotate(0deg) scale(1.27);
+  }
+  50% {
+    transform: rotate(8deg) scale(1.31);
+  }
+  100% {
+    transform: rotate(0deg) scale(1.27);
+  }
+}
+@keyframes pentagon-child--7 {
+  0% {
+    transform: rotate(7deg) scale(1.33);
+  }
+  50% {
+    transform: rotate(0deg) scale(1.25);
+  }
+  100% {
+    transform: rotate(7deg) scale(1.33);
+  }
+}
+@keyframes pentagon-child--8 {
+  0% {
+    transform: rotate(10deg) scale(1.37);
+  }
+  50% {
+    transform: rotate(14deg) scale(1.58);
+  }
+  100% {
+    transform: rotate(10deg) scale(1.37);
+  }
+}
+@keyframes pentagon-child--9 {
+  0% {
+    transform: rotate(1deg) scale(1.41);
+  }
+  50% {
+    transform: rotate(-7deg) scale(1.51);
+  }
+  100% {
+    transform: rotate(1deg) scale(1.41);
+  }
+}
 
 // --------------------------------------------------
 // Responsive
