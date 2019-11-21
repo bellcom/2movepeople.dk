@@ -10,7 +10,7 @@
 // Variables
 // --------------------------------------------------
 
-$paragraph-inner-spacing-top-xs: 70px;
+$paragraph-inner-spacing-top-xs: 250px;
 $paragraph-inner-spacing-bottom-xs: 50px;
 $paragraph-inner-spacing-top-sm: 100px;
 $paragraph-inner-spacing-bottom-sm: 70px;
@@ -34,6 +34,10 @@ $paragraph-inner-spacing-bottom-lg: 130px;
   background-image: url('../images/banner/background.png');
 
   .paragraph__inner {
+    position: relative;
+
+    z-index: 50;
+
     padding-top: $paragraph-inner-spacing-top-xs;
     padding-bottom: $paragraph-inner-spacing-bottom-xs;
   }
@@ -70,23 +74,24 @@ $paragraph-inner-spacing-bottom-lg: 130px;
   right: 0;
   bottom: 0;
 
+  z-index: 0;
+
   overflow: hidden;
 }
 .pentagon {
   position: absolute;
 
-  top: -30px;
+  top: -60px;
   left: 0;
   right: 0;
-  bottom: -30px;
+  bottom: -60px;
 
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 
+  animation-duration: 10s;
   animation-iteration-count: infinite;
-  animation-duration: 15s;
-  transition: ease-in-out;
   transform: translate3d(0, 0, 0);
 
   will-change: transform;
@@ -94,7 +99,6 @@ $paragraph-inner-spacing-bottom-lg: 130px;
   perspective: 1000;
 }
 .pentagon--main {
-  animation-duration: 12s;
   animation-name: pentagon-main;
 
   background-image: url("../images/banner/pentagon-main.svg");
@@ -106,44 +110,34 @@ $paragraph-inner-spacing-bottom-lg: 130px;
   animation-name: pentagon-child--1;
 }
 .pentagon--child-2 {
-  animation-duration: 29s;
-
   animation-name: pentagon-child--2;
 }
 .pentagon--child-3 {
-  animation-duration: 25s;
-
   animation-name: pentagon-child--3;
 }
 .pentagon--child-4 {
-  animation-duration: 12s;
-
   animation-name: pentagon-child--4;
 }
 .pentagon--child-5 {
-  animation-duration: 15s;
-
   animation-name: pentagon-child--5;
 }
 .pentagon--child-6 {
-  animation-duration: 18s;
-
   animation-name: pentagon-child--6;
 }
 .pentagon--child-7 {
-  animation-duration: 22s;
-
   animation-name: pentagon-child--7;
 }
 .pentagon--child-8 {
-  animation-duration: 28s;
-
   animation-name: pentagon-child--8;
 }
 .pentagon--child-9 {
-  animation-duration: 20s;
-
   animation-name: pentagon-child--9;
+}
+.pentagon--child-10 {
+  animation-name: pentagon-child--10;
+}
+.pentagon--child-11 {
+  animation-name: pentagon-child--11;
 }
 
 // --------------------------------------------------
@@ -166,101 +160,123 @@ $paragraph-inner-spacing-bottom-lg: 130px;
 // Pentagon children.
 @keyframes pentagon-child--1 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(11deg) scale(1.0);
+    transform: translate3d(0, 0, 0) rotate(338deg) scale(.86);
   }
-  50% {
-    transform: translate3d(0, 0, 0) rotate(18deg) scale(0.95);
+  60% {
+    transform: translate3d(0, 0, 0) rotate(343deg) scale(.91);
   }
   100% {
-    transform: translate3d(0, 0, 0) rotate(11deg) scale(1.0);
+    transform: translate3d(0, 0, 0) rotate(338deg) scale(.86);
   }
 }
 @keyframes pentagon-child--2 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(0deg) scale(1.1);
+    transform: translate3d(0, 0, 0) rotate(339deg) scale(.92);
   }
-  50% {
-    transform: translate3d(0, 0, 0) rotate(12deg) scale(1.05);
+  40% {
+    transform: translate3d(0, 0, 0) rotate(344deg) scale(.97);
   }
   100% {
-    transform: translate3d(0, 0, 0) rotate(0deg) scale(1.1);
+    transform: translate3d(0, 0, 0) rotate(339deg) scale(.92);
   }
 }
 @keyframes pentagon-child--3 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(-10deg) scale(1.15);
+    transform: translate3d(0, 0, 0) rotate(340deg) scale(.97);
   }
   50% {
-    transform: translate3d(0, 0, 0) rotate(5deg) scale(1.25);
+    transform: translate3d(0, 0, 0) rotate(347deg) scale(1.07);
   }
   100% {
-    transform: translate3d(0, 0, 0) rotate(-10deg) scale(1.15);
+    transform: translate3d(0, 0, 0) rotate(340deg) scale(.97);
   }
 }
 @keyframes pentagon-child--4 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(10deg) scale(1.20);
+    transform: translate3d(0, 0, 0) rotate(341deg) scale(1.02);
   }
   50% {
-    transform: translate3d(0, 0, 0) rotate(22deg) scale(1.27);
+    transform: translate3d(0, 0, 0) rotate(346deg) scale(1.03);
   }
   100% {
-    transform: translate3d(0, 0, 0) rotate(10deg) scale(1.20);
+    transform: translate3d(0, 0, 0) rotate(341deg) scale(1.02);
   }
 }
 @keyframes pentagon-child--5 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(17deg) scale(1.23);
+    transform: translate3d(0, 0, 0) rotate(342deg) scale(1.07);
   }
-  50% {
-    transform: translate3d(0, 0, 0) rotate(25deg) scale(1.25);
+  40% {
+    transform: translate3d(0, 0, 0) rotate(347deg) scale(1.12);
   }
   100% {
-    transform: translate3d(0, 0, 0) rotate(17deg) scale(1.23);
+    transform: translate3d(0, 0, 0) rotate(342deg) scale(1.07);
   }
 }
 @keyframes pentagon-child--6 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(0deg) scale(1.27);
+    transform: translate3d(0, 0, 0) rotate(343deg) scale(1.12);
   }
   50% {
-    transform: translate3d(0, 0, 0) rotate(8deg) scale(1.31);
+    transform: translate3d(0, 0, 0) rotate(348deg) scale(1.17);
   }
   100% {
-    transform: translate3d(0, 0, 0) rotate(0deg) scale(1.27);
+    transform: translate3d(0, 0, 0) rotate(343deg) scale(1.12);
   }
 }
 @keyframes pentagon-child--7 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(7deg) scale(1.33);
+    transform: translate3d(0, 0, 0) rotate(344deg) scale(1.17);
   }
-  50% {
-    transform: translate3d(0, 0, 0) rotate(0deg) scale(1.25);
+  60% {
+    transform: translate3d(0, 0, 0) rotate(349deg) scale(1.22);
   }
   100% {
-    transform: translate3d(0, 0, 0) rotate(7deg) scale(1.33);
+    transform: translate3d(0, 0, 0) rotate(344deg) scale(1.17);
   }
 }
 @keyframes pentagon-child--8 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(10deg) scale(1.37);
+    transform: translate3d(0, 0, 0) rotate(345deg) scale(1.22);
   }
   50% {
-    transform: translate3d(0, 0, 0) rotate(14deg) scale(1.58);
+    transform: translate3d(0, 0, 0) rotate(347deg) scale(1.34);
   }
   100% {
-    transform: translate3d(0, 0, 0) rotate(10deg) scale(1.37);
+    transform: translate3d(0, 0, 0) rotate(345deg) scale(1.22);
   }
 }
 @keyframes pentagon-child--9 {
   0% {
-    transform: translate3d(0, 0, 0) rotate(1deg) scale(1.41);
+    transform: translate3d(0, 0, 0) rotate(346deg) scale(1.27);
   }
   50% {
-    transform: translate3d(0, 0, 0) rotate(-7deg) scale(1.51);
+    transform: translate3d(0, 0, 0) rotate(351deg) scale(1.32);
   }
   100% {
-    transform: translate3d(0, 0, 0) rotate(1deg) scale(1.41);
+    transform: translate3d(0, 0, 0) rotate(346deg) scale(1.27);
+  }
+}
+@keyframes pentagon-child--10 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(347deg) scale(1.32);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotate(349deg) scale(1.33);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(347deg) scale(1.32);
+  }
+}
+@keyframes pentagon-child--11 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(348deg) scale(1.37);
+  }
+  40% {
+    transform: translate3d(0, 0, 0) rotate(353deg) scale(1.42);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(348deg) scale(1.37);
   }
 }
 
@@ -272,7 +288,106 @@ $paragraph-inner-spacing-bottom-lg: 130px;
 @media #{$breakpoint-mobile-and-up} {}
 
 // Mobile - only
-@media #{$breakpoint-mobile-only} {}
+@media #{$breakpoint-mobile-only} {
+
+  .pentagon {
+    top: 70px;
+    bottom: 0;
+    left: -100px;
+    right: -100px;
+
+    background-size: 100%;
+  }
+
+  .pentagon--child-2,
+  .pentagon--child-4,
+  .pentagon--child-6,
+  .pentagon--child-8,
+  .pentagon--child-10 {
+    display: none;
+  }
+
+  // Pentagon main.
+  @keyframes pentagon-main {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(-9deg) scale(1.0);
+    }
+    50% {
+      transform: translate3d(0, 0, 0) rotate(-7deg) scale(1.05);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(-9deg) scale(1.0);
+    }
+  }
+
+  // Pentagon children.
+  @keyframes pentagon-child--1 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(320deg) scale(.88);
+    }
+    60% {
+      transform: translate3d(0, 0, 0) rotate(325deg) scale(.93);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(320deg) scale(.88);
+    }
+  }
+  @keyframes pentagon-child--3 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(321deg) scale(.99);
+    }
+    50% {
+      transform: translate3d(0, 0, 0) rotate(326deg) scale(1.09);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(321deg) scale(.99);
+    }
+  }
+  @keyframes pentagon-child--5 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(322deg) scale(1.09);
+    }
+    40% {
+      transform: translate3d(0, 0, 0) rotate(327deg) scale(1.14);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(322deg) scale(1.09);
+    }
+  }
+  @keyframes pentagon-child--7 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(323deg) scale(1.19);
+    }
+    60% {
+      transform: translate3d(0, 0, 0) rotate(328deg) scale(1.24);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(323deg) scale(1.19);
+    }
+  }
+  @keyframes pentagon-child--9 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(324deg) scale(1.29);
+    }
+    50% {
+      transform: translate3d(0, 0, 0) rotate(329deg) scale(1.34);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(324deg) scale(1.29);
+    }
+  }
+  @keyframes pentagon-child--11 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(325deg) scale(1.39);
+    }
+    40% {
+      transform: translate3d(0, 0, 0) rotate(330deg) scale(1.44);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(325deg) scale(1.39);
+    }
+  }
+}
 
 // Tablet - and up
 @media #{$breakpoint-tablet-and-up} {}
