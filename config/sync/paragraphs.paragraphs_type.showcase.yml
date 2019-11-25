@@ -1,0 +1,9 @@
+uuid: ba6060e2-da01-4194-8391-a98963a9ff2c
+langcode: da
+status: true
+dependencies: {  }
+id: showcase
+label: Fremvisning
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

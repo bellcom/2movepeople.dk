@@ -1,0 +1,38 @@
+uuid: 993250b6-fa5d-4b23-8954-022ec74fd6d3
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.explainer.field_heading
+    - field.field.paragraph.explainer.field_path
+    - paragraphs.paragraphs_type.explainer
+  module:
+    - inline_entity_form
+id: paragraph.explainer.default
+targetEntityType: paragraph
+bundle: explainer
+mode: default
+content:
+  field_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_path:
+    weight: 1
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      override_labels: false
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+hidden:
+  created: true
+  status: true

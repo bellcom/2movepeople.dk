@@ -1,0 +1,34 @@
+uuid: 8e49dfe8-74db-4ec0-ba7b-0dbfd0ba2102
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.showcase_item
+    - field.field.simple_elements.showcase_item.field_body
+    - field.field.simple_elements.showcase_item.field_image
+  module:
+    - image
+    - text
+id: simple_elements.showcase_item.default
+targetEntityType: simple_elements
+bundle: showcase_item
+mode: default
+content:
+  field_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true

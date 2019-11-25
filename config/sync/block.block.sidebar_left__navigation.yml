@@ -1,0 +1,25 @@
+uuid: e005aa83-c92b-4c3e-b3b8-9dbd87bb1f30
+langcode: da
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - custom_theme
+id: sidebar_left__navigation
+theme: custom_theme
+region: sidr_right__primary
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Primær navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

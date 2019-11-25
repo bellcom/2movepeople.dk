@@ -1,0 +1,21 @@
+uuid: 5924a3ba-9c7d-4bb7-bc47-a1b5471fb515
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.showcase_item
+    - field.storage.simple_elements.field_body
+  module:
+    - text
+id: simple_elements.showcase_item.field_body
+field_name: field_body
+entity_type: simple_elements
+bundle: showcase_item
+label: Indholdstekst
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

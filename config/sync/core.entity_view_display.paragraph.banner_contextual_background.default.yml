@@ -1,0 +1,41 @@
+uuid: df878160-5c4d-4c18-ba7f-7448ee15f227
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner_contextual_background.field_body
+    - field.field.paragraph.banner_contextual_background.field_heading
+    - field.field.paragraph.banner_contextual_background.field_show_back_button
+    - field.field.paragraph.banner_contextual_background.field_subheading
+    - paragraphs.paragraphs_type.banner_contextual_background
+  module:
+    - text
+id: paragraph.banner_contextual_background.default
+targetEntityType: paragraph
+bundle: banner_contextual_background
+mode: default
+content:
+  field_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_subheading:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  field_show_back_button: true

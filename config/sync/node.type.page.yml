@@ -1,10 +1,17 @@
 uuid: bd7803cb-e71a-41c1-be62-2d68a17f4448
 langcode: da
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
-name: 'Simpel side'
+name: 'Alm. side'
 type: page
 description: 'Brug <em>simple sider</em> til dit statiske indhold, som f.eks. en "om os"-side.'
 help: ''

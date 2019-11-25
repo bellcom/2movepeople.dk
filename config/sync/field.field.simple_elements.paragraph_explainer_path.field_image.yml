@@ -1,0 +1,38 @@
+uuid: c7e8adce-ac1e-4034-8df0-1ed18d134807
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.paragraph_explainer_path
+    - field.storage.simple_elements.field_image
+  module:
+    - image
+id: simple_elements.paragraph_explainer_path.field_image
+field_name: field_image
+entity_type: simple_elements
+bundle: paragraph_explainer_path
+label: Billede
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

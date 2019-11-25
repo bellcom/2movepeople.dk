@@ -1,0 +1,19 @@
+uuid: 378553da-81e8-4f13-92b4-410efe16cf08
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.paragraph_explainer_path
+    - field.storage.simple_elements.field_heading
+id: simple_elements.paragraph_explainer_path.field_heading
+field_name: field_heading
+entity_type: simple_elements
+bundle: paragraph_explainer_path
+label: Overskrift
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

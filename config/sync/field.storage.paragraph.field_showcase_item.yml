@@ -1,0 +1,20 @@
+uuid: a0d8460f-f79b-48fb-aad5-5690b45823df
+langcode: da
+status: true
+dependencies:
+  module:
+    - eck
+    - paragraphs
+id: paragraph.field_showcase_item
+field_name: field_showcase_item
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: simple_elements
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

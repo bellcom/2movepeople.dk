@@ -1,0 +1,21 @@
+uuid: e704dde4-84dd-4080-89fa-3d15d0181048
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.testimonial
+    - field.storage.simple_elements.field_body
+  module:
+    - text
+id: simple_elements.testimonial.field_body
+field_name: field_body
+entity_type: simple_elements
+bundle: testimonial
+label: Udtalelse
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,25 @@
+uuid: 884ac618-7520-47b2-9dd8-48fe1df39ef7
+langcode: da
+status: true
+dependencies:
+  config:
+    - webform.webform.contact
+  module:
+    - webform
+  theme:
+    - custom_theme
+id: webform_try_2movepeople
+theme: custom_theme
+region: footer
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  provider: webform
+  label_display: '0'
+  webform_id: contact
+  default_data: ''
+  redirect: false
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 3da410b0-24b6-440d-8e0d-64daed41b245
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.simple_elements
+name: 'Showcase item'
+type: showcase_item
+description: ''

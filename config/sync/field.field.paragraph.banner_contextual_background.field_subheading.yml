@@ -1,0 +1,19 @@
+uuid: 20554bbe-dece-485b-8977-997a23229187
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subheading
+    - paragraphs.paragraphs_type.banner_contextual_background
+id: paragraph.banner_contextual_background.field_subheading
+field_name: field_subheading
+entity_type: paragraph
+bundle: banner_contextual_background
+label: Underoverskrift
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

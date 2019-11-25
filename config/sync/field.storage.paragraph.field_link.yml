@@ -1,0 +1,19 @@
+uuid: 1154f26a-9273-4088-bb45-acd4184c800f
+langcode: da
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_link
+field_name: field_link
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

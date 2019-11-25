@@ -1,0 +1,14 @@
+uuid: 15169ed2-8e92-4141-b88e-47c9906b4194
+langcode: da
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: K8qTfK5-87DpwTQBkqhgTMR4P0Zz8Z9aNI7OnMlTb0Q
+id: gender
+label: Køn
+category: Demographic
+likert: false
+options: "Male: Male\nFemale: Female\n"

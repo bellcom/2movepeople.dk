@@ -1,0 +1,9 @@
+uuid: 6f1291e0-3fa2-453f-af88-2579d47d788e
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.simple_elements
+name: Path
+type: paragraph_explainer_path
+description: 'A path for the explainer paragraph.'

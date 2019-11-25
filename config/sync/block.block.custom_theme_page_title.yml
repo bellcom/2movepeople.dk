@@ -1,0 +1,20 @@
+uuid: 1063a3f0-e760-4d44-b3bc-7e76612c347e
+langcode: da
+status: false
+dependencies:
+  theme:
+    - custom_theme
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: custom_theme_page_title
+theme: custom_theme
+region: sidr_right__primary
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

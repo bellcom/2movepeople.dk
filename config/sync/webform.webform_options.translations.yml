@@ -1,0 +1,14 @@
+uuid: 2910b3cc-faed-401e-aa2b-609f3c5f7f65
+langcode: da
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: Mb_L3vE-0IBZH5s2rjpk2LNn0QHClQP9AARQdCmVLt4
+id: translations
+label: Oversættelser
+category: Language
+likert: false
+options: ''

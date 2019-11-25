@@ -1,0 +1,19 @@
+uuid: 5ac0e5ed-6ed9-439b-a799-aed5286e3dd6
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.explainer
+id: paragraph.explainer.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: explainer
+label: Overskrift
+description: 'Eks. "Hvem er du?"'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

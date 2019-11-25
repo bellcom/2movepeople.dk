@@ -1,0 +1,9 @@
+uuid: cb61ec4d-f018-4e05-86f3-276c0fd83da8
+langcode: da
+status: true
+dependencies: {  }
+id: banner
+label: 'Banner m. videobaggrund'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

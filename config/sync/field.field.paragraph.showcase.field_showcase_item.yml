@@ -1,0 +1,28 @@
+uuid: 8be7451e-c99a-45be-a799-b15d47aa5eec
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.showcase_item
+    - field.storage.paragraph.field_showcase_item
+    - paragraphs.paragraphs_type.showcase
+id: paragraph.showcase.field_showcase_item
+field_name: field_showcase_item
+entity_type: paragraph
+bundle: showcase
+label: Fremvisning
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:simple_elements'
+  handler_settings:
+    target_bundles:
+      showcase_item: showcase_item
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

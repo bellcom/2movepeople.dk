@@ -1,0 +1,9 @@
+uuid: 307d617e-c884-4848-b787-4b7510805961
+langcode: da
+status: true
+dependencies: {  }
+id: banner_contextual_background
+label: 'Banner m. kontekst-farvet baggrund'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,22 @@
+uuid: fc4668df-c7d3-423b-b415-0d8f4bbeea8e
+langcode: da
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - custom_theme
+_core:
+  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
+id: custom_theme_breadcrumbs
+theme: custom_theme
+region: sidr_right__primary
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

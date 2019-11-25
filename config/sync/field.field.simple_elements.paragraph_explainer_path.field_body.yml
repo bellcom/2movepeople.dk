@@ -1,0 +1,21 @@
+uuid: 985625b7-8327-4916-9e83-74a463b472af
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.paragraph_explainer_path
+    - field.storage.simple_elements.field_body
+  module:
+    - text
+id: simple_elements.paragraph_explainer_path.field_body
+field_name: field_body
+entity_type: simple_elements
+bundle: paragraph_explainer_path
+label: Indholdstekst
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

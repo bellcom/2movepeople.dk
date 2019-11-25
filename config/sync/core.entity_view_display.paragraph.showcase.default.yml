@@ -1,0 +1,31 @@
+uuid: 40c84a5d-4ed8-4c9b-b439-5b6d988bf1e6
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.showcase.field_heading
+    - field.field.paragraph.showcase.field_showcase_item
+    - paragraphs.paragraphs_type.showcase
+id: paragraph.showcase.default
+targetEntityType: paragraph
+bundle: showcase
+mode: default
+content:
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_showcase_item:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

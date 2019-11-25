@@ -1,0 +1,21 @@
+uuid: 00058043-fd51-46c4-b32d-6fc6f31a31c6
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.banner_contextual_background
+  module:
+    - text
+id: paragraph.banner_contextual_background.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: banner_contextual_background
+label: Indholdstekst
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

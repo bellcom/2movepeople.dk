@@ -1,0 +1,19 @@
+uuid: a7e2e3c8-f27d-40cc-bb3e-c44a74e86503
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.paragraph_explainer_path
+    - field.storage.simple_elements.field_path
+id: simple_elements.paragraph_explainer_path.field_path
+field_name: field_path
+entity_type: simple_elements
+bundle: paragraph_explainer_path
+label: Sti
+description: 'Eks. "Leder" eller "Bruger"'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

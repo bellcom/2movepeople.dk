@@ -1,0 +1,23 @@
+uuid: d4c7e6b1-a3ac-4180-a332-9132d8d9cb12
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_position
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - options
+id: paragraph.text_with_image.field_image_position
+field_name: field_image_position
+entity_type: paragraph
+bundle: text_with_image
+label: 'Placering af billede'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: right
+default_value_callback: ''
+settings: {  }
+field_type: list_string

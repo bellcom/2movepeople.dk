@@ -1,0 +1,9 @@
+uuid: 9865833d-3b21-40a7-9d1c-5cedc68679e6
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.simple_elements
+name: Udtalelse
+type: testimonial
+description: ''
