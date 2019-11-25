@@ -3,6 +3,7 @@ langcode: da
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_paragraphs_banner
     - field.field.node.page.field_paragraphs_wide
     - node.type.page
   module:
@@ -21,9 +22,21 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_paragraphs_banner:
+    type: entity_reference_paragraphs
+    weight: 8
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_paragraphs_wide:
     type: paragraphs
-    weight: 8
+    weight: 9
     settings:
       title: Paragraph
       title_plural: Paragraphs

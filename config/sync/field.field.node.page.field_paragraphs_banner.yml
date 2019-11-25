@@ -1,19 +1,19 @@
-uuid: 5d372cef-c30e-41aa-8304-d60fee954d13
+uuid: 634c8db2-5169-40b7-8abb-d546c8a3eb2f
 langcode: da
 status: true
 dependencies:
   config:
-    - field.storage.node.field_paragraphs_wide
+    - field.storage.node.field_paragraphs_banner
     - node.type.page
     - paragraphs.paragraphs_type.banner
     - paragraphs.paragraphs_type.banner_contextual_background
   module:
     - entity_reference_revisions
-id: node.page.field_paragraphs_wide
-field_name: field_paragraphs_wide
+id: node.page.field_paragraphs_banner
+field_name: field_paragraphs_banner
 entity_type: node
 bundle: page
-label: 'Afsnit (fuld bredde)'
+label: 'Afsnit (banners)'
 description: ''
 required: false
 translatable: false
@@ -22,20 +22,20 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 1
+    negate: 0
     target_bundles:
       banner: banner
       banner_contextual_background: banner_contextual_background
     target_bundles_drag_drop:
-      explainer:
-        weight: 2
-        enabled: false
       banner:
         enabled: true
         weight: 7
       banner_contextual_background:
         enabled: true
         weight: 8
+      explainer:
+        weight: 9
+        enabled: false
       showcase:
         weight: 10
         enabled: false

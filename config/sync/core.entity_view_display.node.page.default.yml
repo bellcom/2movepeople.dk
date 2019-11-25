@@ -3,6 +3,7 @@ langcode: da
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_paragraphs_banner
     - field.field.node.page.field_paragraphs_wide
     - node.type.page
   module:
@@ -15,6 +16,15 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  field_paragraphs_banner:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_paragraphs_wide:
     type: entity_reference_revisions_entity_view
     weight: 0

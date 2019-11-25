@@ -10,14 +10,14 @@
 // Variables
 // --------------------------------------------------
 
-$paragraph-inner-spacing-top-xs: 180px;
-$paragraph-inner-spacing-bottom-xs: 50px;
-$paragraph-inner-spacing-top-sm: 100px;
-$paragraph-inner-spacing-bottom-sm: 70px;
-$paragraph-inner-spacing-top-md: 160px;
-$paragraph-inner-spacing-bottom-md: 100px;
-$paragraph-inner-spacing-top-lg: 190px;
-$paragraph-inner-spacing-bottom-lg: 130px;
+$paragraph-inner-spacing-top-xs: 20px;
+$paragraph-inner-spacing-bottom-xs: 20px;
+$paragraph-inner-spacing-top-sm: 30px;
+$paragraph-inner-spacing-bottom-sm: 30px;
+$paragraph-inner-spacing-top-md: 35px;
+$paragraph-inner-spacing-bottom-md: 35px;
+$paragraph-inner-spacing-top-lg: 35px;
+$paragraph-inner-spacing-bottom-lg: 35px;
 
 // --------------------------------------------------
 // Mixins
@@ -31,6 +31,10 @@ $paragraph-inner-spacing-bottom-lg: 130px;
 
 .paragraph--type--text-with-image {
   background-color: #fff;
+
+  &.paragraph {
+    min-height: initial;
+  }
 
   .paragraph__inner {
     padding-top: $paragraph-inner-spacing-top-xs;
@@ -48,12 +52,25 @@ $paragraph-inner-spacing-bottom-lg: 130px;
   .field--name-field-subheading {
 
     .heading-h3 {
+      margin-top: 0;
+
       font-weight: $headings-font-weight;
     }
 
     + .field--name-field-body {
       margin-top: 20px;
     }
+  }
+
+  .field--name-field-image {
+
+    img {
+      margin: auto;
+    }
+  }
+
+  [class*="col-"] {
+    justify-content: center;
   }
 }
 
@@ -91,9 +108,7 @@ $paragraph-inner-spacing-bottom-lg: 130px;
 
   .paragraph--type--text-with-image {
 
-    .field--name-field-heading {
-      margin-bottom: 50px;
-    }
+    .field--name-field-heading {}
 
     .field--name-field-subheading {}
 

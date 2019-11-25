@@ -1,29 +1,32 @@
 // |--------------------------------------------------------------------------
-// | Entity - full
+// | Paragraphs wide
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .entity-full
+// | - .field--name-field-paragraphs-wide
 // |
 
 // --------------------------------------------------
 // Variables
 // --------------------------------------------------
 
-$xs-entity-full-header-inner-spacing: 50px;
-$sm-entity-full-header-inner-spacing: 60px;
-$md-entity-full-header-inner-spacing: 80px;
-$lg-entity-full-header-inner-spacing: 90px;
+$xs-field-paragraphs-wide-padding-top-bottom: 30px;
+$sm-field-paragraphs-wide-padding-top-bottom: 50px;
+$md-field-paragraphs-wide-padding-top-bottom: 90px;
+$lg-field-paragraphs-wide-padding-top-bottom: 120px;
 
 // --------------------------------------------------
 // Mixins
 // --------------------------------------------------
 
-@mixin entity-full-mixin() {}
-
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
+
+.field--name-field-paragraphs-wide {
+  padding-top: $xs-field-paragraphs-wide-padding-top-bottom;
+  padding-bottom: $xs-field-paragraphs-wide-padding-top-bottom;
+}
 
 // --------------------------------------------------
 // Variants
@@ -43,16 +46,34 @@ $lg-entity-full-header-inner-spacing: 90px;
 @media #{$breakpoint-tablet-and-up} {}
 
 // Tablet - only
-@media #{$breakpoint-tablet-only} {}
+@media #{$breakpoint-tablet-only} {
+
+  .field--name-field-paragraphs-wide {
+    padding-top: $sm-field-paragraphs-wide-padding-top-bottom;
+    padding-bottom: $sm-field-paragraphs-wide-padding-top-bottom;
+  }
+}
 
 // Desktop - and up
 @media #{$breakpoint-desktop-and-up} {}
 
 // Desktop - only
-@media #{$breakpoint-desktop-only} {}
+@media #{$breakpoint-desktop-only} {
+
+  .field--name-field-paragraphs-wide {
+    padding-top: $md-field-paragraphs-wide-padding-top-bottom;
+    padding-bottom: $md-field-paragraphs-wide-padding-top-bottom;
+  }
+}
 
 // Large desktop - and up
-@media #{$breakpoint-large-desktop-and-up} {}
+@media #{$breakpoint-large-desktop-and-up} {
+
+  .field--name-field-paragraphs-wide {
+    padding-top: $lg-field-paragraphs-wide-padding-top-bottom;
+    padding-bottom: $lg-field-paragraphs-wide-padding-top-bottom;
+  }
+}
 
 // Print
 @media print {}
