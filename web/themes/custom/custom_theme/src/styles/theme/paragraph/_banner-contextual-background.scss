@@ -130,6 +130,8 @@ $paragraph-inner-spacing-bottom-lg: 130px;
 @media #{$breakpoint-desktop-only} {
 
   .paragraph--type--banner-contextual-background {
+    padding-left: $sticky-navigation-height--md;
+    padding-right: $paragraph-left-right-spacing-md;
 
     .paragraph__inner {
       padding-top: $paragraph-inner-spacing-top-md;
@@ -142,6 +144,8 @@ $paragraph-inner-spacing-bottom-lg: 130px;
 @media #{$breakpoint-large-desktop-and-up} {
 
   .paragraph--type--banner-contextual-background {
+    padding-left: $sticky-navigation-height--lg + $paragraph-left-right-spacing-lg;
+    padding-right: $paragraph-left-right-spacing-lg;
 
     .paragraph__inner {
       padding-top: $paragraph-inner-spacing-top-lg;

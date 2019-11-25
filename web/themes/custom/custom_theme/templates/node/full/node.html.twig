@@ -8,5 +8,10 @@
 ] %}
 <article{{ attributes.addClass(classes) }}>
   {{ content.field_paragraphs_banner }}
-  {{ content.field_paragraphs_wide }}
+
+  <div class="paragraphs-wrapper">
+    <div class="line"></div>
+
+    {{ content.field_paragraphs_wide }}
+  </div>
 </article>
