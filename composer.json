@@ -30,6 +30,7 @@
         "drupal/metatag": "^1.10",
         "drupal/paragraphs": "^1.9",
         "drupal/pathauto": "^1.5",
+        "drupal/svg_image": "^1.9",
         "drupal/twig_tweak": "^2.4",
         "drupal/twig_xdebug": "^1.1",
         "drupal/webform": "^5.4",
