@@ -30,6 +30,10 @@ $paragraph-inner-spacing-bottom-lg: 130px;
 // --------------------------------------------------
 
 .paragraph--type--banner {
+  position: relative;
+
+  min-height: 100vh;
+
   background-color: #eee;
   background-image: url('../images/banner/background.png');
 
