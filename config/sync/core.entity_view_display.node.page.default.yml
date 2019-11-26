@@ -3,6 +3,7 @@ langcode: da
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_heading
     - field.field.node.page.field_paragraphs_banner
     - field.field.node.page.field_paragraphs_wide
     - node.type.page
@@ -16,9 +17,17 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  field_heading:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_paragraphs_banner:
     type: entity_reference_revisions_entity_view
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       view_mode: default
@@ -27,7 +36,7 @@ content:
     region: content
   field_paragraphs_wide:
     type: entity_reference_revisions_entity_view
-    weight: 0
+    weight: 2
     label: hidden
     settings:
       view_mode: default

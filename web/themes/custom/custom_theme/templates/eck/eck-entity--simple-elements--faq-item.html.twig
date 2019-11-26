@@ -1,0 +1,13 @@
+{% set classes = [
+  'faq-item',
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  <div class="faq-item__heading js-faq-item-toggle">
+    {{ content.field_heading }}
+  </div>
+
+  <div class="faq-item__body">
+    {{ content.field_body }}
+  </div>
+</div>

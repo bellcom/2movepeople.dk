@@ -1,0 +1,9 @@
+uuid: 0ce03f3a-16e8-4625-b7a6-8900c8dc540f
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.simple_elements
+name: 'Spørgsmål og svar (enkelt)'
+type: faq_item
+description: ''

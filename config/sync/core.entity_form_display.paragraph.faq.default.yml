@@ -1,0 +1,29 @@
+uuid: 3ff4abe1-6589-40a7-bf1c-b2de49bbe4f1
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq.field_faq_items
+    - paragraphs.paragraphs_type.faq
+  module:
+    - inline_entity_form
+id: paragraph.faq.default
+targetEntityType: paragraph
+bundle: faq
+mode: default
+content:
+  field_faq_items:
+    weight: 0
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      override_labels: false
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+hidden:
+  created: true
+  status: true

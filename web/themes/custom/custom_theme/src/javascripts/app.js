@@ -16,3 +16,5 @@ jQuery(function ($) {
   // Enable tooltips.
   $('[data-toggle="tooltip"]').tooltip();
 });
+
+

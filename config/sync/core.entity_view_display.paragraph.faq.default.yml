@@ -1,0 +1,22 @@
+uuid: e42a92e5-687f-43d7-b1c2-29d81c77887f
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq.field_faq_items
+    - paragraphs.paragraphs_type.faq
+id: paragraph.faq.default
+targetEntityType: paragraph
+bundle: faq
+mode: default
+content:
+  field_faq_items:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }
