@@ -17,12 +17,12 @@
   {% if multiple %}
     <div{{ attributes.addClass(classes, 'field--items') }}>
       {% for item in items %}
-        <div{{ item.attributes.addClass('field--item') }}><h3 class="heading-h3">{{ item.content }}</h3></div>
+        <div{{ item.attributes.addClass('field--item') }}><h3 class="heading-h4">{{ item.content }}</h3></div>
       {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ attributes.addClass(classes, 'field--item') }}><h3 class="heading-h3">{{ item.content }}</h3></div>
+      <div{{ attributes.addClass(classes, 'field--item') }}><h3 class="heading-h4">{{ item.content }}</h3></div>
     {% endfor %}
   {% endif %}
 {% else %}
@@ -32,7 +32,7 @@
     <div class="field--items">
       {% endif %}
       {% for item in items %}
-        <div{{ item.attributes.addClass('field--item') }}><h3 class="heading-h3">{{ item.content }}</h3></div>
+        <div{{ item.attributes.addClass('field--item') }}><h3 class="heading-h4">{{ item.content }}</h3></div>
       {% endfor %}
       {% if multiple %}
     </div>
