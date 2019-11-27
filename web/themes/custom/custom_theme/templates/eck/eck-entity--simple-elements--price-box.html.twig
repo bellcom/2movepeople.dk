@@ -1,0 +1,10 @@
+{% set classes = [
+  'price-box',
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  {{ content.field_heading }}
+  {{ content.field_body }}
+  {{ content.field_price }}
+  {{ content.field_link }}
+</div>
