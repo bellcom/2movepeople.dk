@@ -1,0 +1,58 @@
+uuid: 8adc5da7-2124-43e2-a560-965cedd67db8
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.price_box
+    - field.field.simple_elements.price_box.field_body
+    - field.field.simple_elements.price_box.field_heading
+    - field.field.simple_elements.price_box.field_link
+    - field.field.simple_elements.price_box.field_price
+  module:
+    - link
+    - text
+id: simple_elements.price_box.default
+targetEntityType: simple_elements
+bundle: price_box
+mode: default
+content:
+  field_body:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_price:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 0
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 46441ec7-9083-44a1-ae32-2481e1635ae6
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.price_box
+    - field.storage.simple_elements.field_price
+id: simple_elements.price_box.field_price
+field_name: field_price
+entity_type: simple_elements
+bundle: price_box
+label: Pris
+description: 'Eks. "Pr. måned 4.995 kr."'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

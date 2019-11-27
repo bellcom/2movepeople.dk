@@ -1,0 +1,9 @@
+uuid: 5dfead60-bc9a-4caa-bb09-655b1042ea1a
+langcode: da
+status: true
+dependencies: {  }
+id: price_boxes
+label: 'Pris bokse'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,9 @@
+uuid: f25079b1-b9c8-44ae-8632-c8cd7e128492
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.simple_elements
+name: 'Pris boks'
+type: price_box
+description: ''

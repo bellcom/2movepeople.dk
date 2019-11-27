@@ -1,0 +1,23 @@
+uuid: 953cfb80-9f78-4681-aeb1-46ffdd1d5596
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.price_box
+    - field.storage.simple_elements.field_link
+  module:
+    - link
+id: simple_elements.price_box.field_link
+field_name: field_link
+entity_type: simple_elements
+bundle: price_box
+label: Link
+description: 'Eks. "Bestil"'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

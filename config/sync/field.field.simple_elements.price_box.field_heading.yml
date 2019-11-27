@@ -1,0 +1,19 @@
+uuid: a5fef691-cfd9-4f5b-ab0d-272cea0d1365
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.price_box
+    - field.storage.simple_elements.field_heading
+id: simple_elements.price_box.field_heading
+field_name: field_heading
+entity_type: simple_elements
+bundle: price_box
+label: Overskrift
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

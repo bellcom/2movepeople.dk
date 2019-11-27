@@ -1,0 +1,19 @@
+uuid: 8ee0a1bd-640e-4f4f-8381-fea2d5df9bb8
+langcode: da
+status: true
+dependencies:
+  module:
+    - eck
+    - link
+id: simple_elements.field_link
+field_name: field_link
+entity_type: simple_elements
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

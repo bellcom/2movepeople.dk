@@ -1,0 +1,28 @@
+uuid: 1e937c87-8168-4814-86ce-6b9fb8a59eba
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.price_box
+    - field.storage.paragraph.field_price_boxes
+    - paragraphs.paragraphs_type.price_boxes
+id: paragraph.price_boxes.field_price_boxes
+field_name: field_price_boxes
+entity_type: paragraph
+bundle: price_boxes
+label: 'Pris bokse'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:simple_elements'
+  handler_settings:
+    target_bundles:
+      price_box: price_box
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

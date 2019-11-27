@@ -1,0 +1,21 @@
+uuid: 416fc44f-d331-4beb-a746-272249b2cf04
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.price_box
+    - field.storage.simple_elements.field_body
+  module:
+    - text
+id: simple_elements.price_box.field_body
+field_name: field_body
+entity_type: simple_elements
+bundle: price_box
+label: Indholdstekst
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

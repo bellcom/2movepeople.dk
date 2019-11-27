@@ -1,0 +1,29 @@
+uuid: 6b842c3b-996e-445b-a435-965b0b5cdf8a
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.price_boxes.field_price_boxes
+    - paragraphs.paragraphs_type.price_boxes
+  module:
+    - inline_entity_form
+id: paragraph.price_boxes.default
+targetEntityType: paragraph
+bundle: price_boxes
+mode: default
+content:
+  field_price_boxes:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+hidden:
+  created: true
+  status: true

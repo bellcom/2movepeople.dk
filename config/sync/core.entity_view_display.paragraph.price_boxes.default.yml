@@ -1,0 +1,22 @@
+uuid: 938a0ba6-81f2-4606-af92-acaa5f4c81a7
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.price_boxes.field_price_boxes
+    - paragraphs.paragraphs_type.price_boxes
+id: paragraph.price_boxes.default
+targetEntityType: paragraph
+bundle: price_boxes
+mode: default
+content:
+  field_price_boxes:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }
