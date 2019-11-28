@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Sidr
+// | Sidebar
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .sidr
+// | - .sidebar
 // |
 
 // --------------------------------------------------
@@ -14,30 +14,69 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin sidr-mixin() {}
+@mixin sidebar-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.sidr {
+.sidebar {
+  display: none;
+  position: fixed;
 
-  .logo {
-    padding: 10px floor( ( $grid-gutter-width / 2 ) );
+  align-items: center;
 
-    img {
-      max-height: 50px;
-    }
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+
+  width: 280px;
+
+  z-index: 2000;
+
+  background-color: $brand-primary;
+
+  .toolbar-horizontal.toolbar-fixed & {
+    top: 39px;
   }
 
-  .logo + .slinky-menu {
-    margin-top: floor( ( $grid-gutter-width / 2 ) );
+  .toolbar-horizontal.toolbar-fixed.toolbar-tray-open & {
+    top: 79px;
   }
+
+  .slinky-menu {
+    flex-grow: 1;
+  }
+
+  &.open {
+    display: flex;
+  }
+}
+
+.sidebar__close {
+  position: absolute;
+
+  top: 40px;
+  right: 40px;
+
+  color: #fff;
+
+  border: 0;
+  background-color: transparent;
 }
 
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
+
+.sidebar--right {
+  right: 0;
+  left: auto;
+}
 
 // --------------------------------------------------
 // Responsive
@@ -56,7 +95,12 @@
 @media #{$breakpoint-tablet-only} {}
 
 // Desktop - and up
-@media #{$breakpoint-desktop-and-up} {}
+@media #{$breakpoint-desktop-and-up} {
+
+  .sidebar {
+    width: 400px;
+  }
+}
 
 // Desktop - only
 @media #{$breakpoint-desktop-only} {}

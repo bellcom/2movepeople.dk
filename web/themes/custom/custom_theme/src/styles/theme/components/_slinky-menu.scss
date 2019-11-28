@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Boxy
+// | Slinky menu
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .boxy
+// | - .slinky-menu
 // |
 
 // --------------------------------------------------
@@ -14,77 +14,42 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin boxy-mixin() {}
+@mixin slinky-menu-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.boxy {
-  position: relative;
+.slinky-menu {
+  color: #fff;
 
-  padding: 15px 0;
+  li {}
 
-  background-color: $body-bg-secondary;
-  border-radius: $border-radius-base;
+  a:not(.back) {
+    font-size: 24px;
 
-  .boxy {
-    margin-left: floor( ( 0 - $boxy-spacing-left-right ) );
-    margin-right: floor( ( 0 - $boxy-spacing-left-right ) );
-
-    border-radius: 0;
+    padding-left: 90px;
   }
-}
 
-.boxy__heading {}
-.boxy__heading__title {
-  font-weight: $headings-font-weight-bold;
-}
+  .back {
+    top: 10px;
+  }
 
-.boxy__body {
-  background-color: inherit;
-}
+  .next {
 
-.boxy__body + .boxy__actions,
-.view .boxy__actions {
-  margin-top: $grid-gutter-width;
-}
-.boxy__actions {
-  text-align: right;
+    &:after {
+      @extend .fa;
+      font-size: 18px;
+      content: $fa-var-angle-right;
+
+      color: #fff;
+    }
+  }
 }
 
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
-
-.boxy {
-
-  &.boxy--background-color-transparent {
-    background-color: transparent;
-    box-shadow: none;
-    border-radius: 0;
-  }
-
-  &.boxy--background-color-body-bg-secondary {
-    background-color: $body-bg-secondary;
-  }
-
-  &.boxy--background-color-primary {
-    background-color: $brand-primary;
-  }
-
-  &.boxy--background-color-secondary {
-    background-color: $brand-secondary;
-  }
-
-  &.boxy--background-color-tertiary {
-    background-color: $brand-tertiary;
-  }
-
-  &.boxy--background-color-quaternary {
-    background-color: $brand-quaternary;
-  }
-}
 
 // --------------------------------------------------
 // Responsive

@@ -14,6 +14,9 @@
   {% if page.sidr_right__primary %}
     <!-- Begin - sidebar (right) -->
     <aside class="sidebar sidebar--right">
+      <button class="js-sidebar-toggle sidebar__close">
+        <img src="{{ base_path ~ directory }}/dist/images/close.svg">
+      </button>
 
       <!-- Begin - navigation -->
       <nav class="slinky-menu" role="navigation">
@@ -53,7 +56,7 @@
 
             <!-- Begin - responsive toggle -->
             <button
-              class="flexy-header__sidebar-toggle">
+              class="flexy-header__sidebar-toggle js-sidebar-toggle">
               <img src="{{ base_path ~ directory }}/dist/images/burger-menu.svg">
             </button>
             <!-- End - responsive toggle -->
