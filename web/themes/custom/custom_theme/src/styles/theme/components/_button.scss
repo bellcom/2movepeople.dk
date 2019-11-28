@@ -39,6 +39,15 @@
   }
 }
 
+.btn-default {
+
+  &:hover,
+  &:active {
+    color: #fff;
+    background: #D53F8F;
+  }
+}
+
 .btn-lg {
   padding-left: 50px;
   padding-right: 50px;
@@ -47,6 +56,34 @@
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
+
+.is-path-borger {
+
+  .btn-primary {
+    background: linear-gradient(90deg, #7CBAEB 0%, #03A0EA 99.96%);
+    box-shadow: 0 7px 10px rgba(153, 168, 216, .1);
+
+    &:hover,
+    &:active {
+      background: linear-gradient(90deg, #0799DD 0%, #17509F 99.96%);
+      box-shadow: 0 7px 10px rgba(153, 168, 216, 0.1);
+    }
+  }
+}
+
+.is-path-hr {
+
+  .btn-primary {
+    background: linear-gradient(90deg, #3CD6E0 0.04%, #237679 99.97%);
+    box-shadow: 0 7px 10px rgba(196, 228, 231, .2);
+
+    &:hover,
+    &:active {
+      background: linear-gradient(90deg, #50BDC4 0.04%, #135E5F 100%);
+      box-shadow: 0 7px 10px rgba(196, 228, 231, .2);
+    }
+  }
+}
 
 // --------------------------------------------------
 // Responsive
