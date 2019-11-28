@@ -1,40 +1,28 @@
-{% set classes = [
-  'layout__segment',
-  'layout__segment--grey',
-] %}
-
 <div{{ attributes.addClass(classes) }}>
-  <div class="layout__container">
-    <div class="banner">
-      <div class="banner__box">
-        <div class="banner__body">
+  {{ content.field_heading }}
 
-          SHOWCASE ITEM
+  <div class="row row--equal-height-columns">
+    <div class="col-md-8 col-lg-9">
+      <div class="showcase__image-wrapper">
+        {{ content.field_image }}
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3" style="justify-content: center;">
+      <div class="showcase__content-wrapper">
+        <div class="text-right">
+          <button class="showcase__toggle showcase__toggle--next js-show-next-showcase">
+            <img src="{{ base_path ~ directory }}/dist/images/showcase-next.svg">
+          </button>
+        </div>
 
-          {# Begin - type #}
-          {% if content.field_type %}
-            <div class="banner__prefix">
-              {{ content.field_type }}
-            </div>
-          {% endif %}
-          {# End - type #}
+        <div class="showcase__body">
+          {{ content.field_body }}
+        </div>
 
-          <h2 class="banner__title">{{ content.field_heading }}</h2>
-
-          {# Begin - body #}
-          {% if content.field_description %}
-            <div class="banner__text">
-              {{ content.field_description }}
-            </div>
-          {% endif %}
-          {# End - body #}
-
-          {% if content.field_link %}
-            <div class="banner__button">
-              {{ content.field_link }}
-            </div>
-          {% endif %}
-
+        <div>
+          <button class="showcase__toggle showcase__toggle--next js-show-previous-showcase">
+            <img src="{{ base_path ~ directory }}/dist/images/showcase-previous.svg">
+          </button>
         </div>
       </div>
     </div>
