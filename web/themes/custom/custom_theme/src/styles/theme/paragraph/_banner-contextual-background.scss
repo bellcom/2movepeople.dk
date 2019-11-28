@@ -49,8 +49,9 @@ $paragraph-inner-spacing-bottom-lg: 130px;
 
   .field--name-field-subheading {
 
-    .heading-h3 {
-      font-weight: $headings-font-weight;
+    .heading-h1, .heading-h2, .heading-h3, .heading-h4, .heading-h5, .heading-h6,
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: $headings-font-weight-light;
     }
 
     + .field--name-field-body {
