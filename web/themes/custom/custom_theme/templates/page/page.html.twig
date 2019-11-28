@@ -39,7 +39,13 @@
 
             <!-- Begin - logo -->
             <a href="{{ url('<front>') }}" class="flexy-header__logo">
-              <img src="{{ base_path ~ directory }}/dist/images/logo.svg">
+              {% if current_path == 'borger' %}
+                <img src="{{ base_path ~ directory }}/dist/images/logo--borger.svg">
+              {% elseif current_path == 'hr' %}
+                <img src="{{ base_path ~ directory }}/dist/images/logo--hr.svg">
+              {% else %}
+                <img src="{{ base_path ~ directory }}/dist/images/logo.svg">
+              {% endif %}
             </a>
             <!-- End - logo -->
 
