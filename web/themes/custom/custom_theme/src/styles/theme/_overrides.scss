@@ -195,6 +195,14 @@ img {
       }
     }
   }
+
+  .row--centered-columns {
+
+    &:not(.view),
+    > .view-content {
+      justify-content: center;
+    }
+  }
 }
 
 // No flexbox
