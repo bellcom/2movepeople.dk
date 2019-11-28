@@ -12,8 +12,8 @@
   {% endif %}
 
   {% if page.sidr_right__primary %}
-    <!-- Begin - sidr source provider -->
-    <aside class="sidr-source-provider">
+    <!-- Begin - sidebar (right) -->
+    <aside class="sidebar sidebar--right">
 
       <!-- Begin - navigation -->
       <nav class="slinky-menu" role="navigation">
@@ -24,7 +24,7 @@
       <!-- End - navigation -->
 
     </aside>
-    <!-- End - sidr source provider -->
+    <!-- End - sidebar (right) -->
   {% endif %}
 
   <!-- Begin - content -->
@@ -53,8 +53,8 @@
 
             <!-- Begin - responsive toggle -->
             <button
-              class="flexy-header__sidebar-toggle sidr-toggle--right">
-              <span class="icon fa fa-bars"></span>
+              class="flexy-header__sidebar-toggle">
+              <img src="{{ base_path ~ directory }}/dist/images/burger-menu.svg">
             </button>
             <!-- End - responsive toggle -->
 
