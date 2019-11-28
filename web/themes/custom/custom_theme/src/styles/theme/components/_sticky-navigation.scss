@@ -61,11 +61,26 @@ $sticky-navigation-height--lg: 140px;
   }
 
   a {
+    position: relative;
     display: block;
+
+    z-index: 50;
 
     padding: 0 20px; // Add padding here for fat fingers.
 
     font-size: $font-size-large;
+
+    .behindor {
+      position: absolute;
+      display: block;
+
+      top: 45px;
+      left: 0;
+      right: 0;
+      bottom: 45px;
+
+      z-index: -1;
+    }
   }
 }
 
@@ -79,6 +94,32 @@ $sticky-navigation-height--lg: 140px;
 
 .sticky-navigation--right {
   right: 0;
+}
+
+.is-path-borger {
+
+  .sticky-navigation {
+
+    a {
+
+      .behindor {
+        background-color: $path-borger-color;
+      }
+    }
+  }
+}
+
+.is-path-hr {
+
+  .sticky-navigation {
+
+    a {
+
+      .behindor {
+        background-color: $path-hr-color;
+      }
+    }
+  }
 }
 
 // --------------------------------------------------

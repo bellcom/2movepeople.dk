@@ -32,8 +32,6 @@ $paragraph-inner-spacing-bottom-lg: 130px;
 .paragraph--type--banner-contextual-background {
   min-height: 100vh;
 
-  background-color: #DAEFF1;
-
   .paragraph__inner {
     padding-top: $paragraph-inner-spacing-top-xs;
     padding-bottom: $paragraph-inner-spacing-bottom-xs;
@@ -63,6 +61,20 @@ $paragraph-inner-spacing-bottom-lg: 130px;
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
+
+.is-path-borger {
+
+  .paragraph--type--banner-contextual-background {
+    background-color: $path-borger-color;
+  }
+}
+
+.is-path-hr {
+
+  .paragraph--type--banner-contextual-background {
+    background-color: $path-hr-color;
+  }
+}
 
 // --------------------------------------------------
 // Responsive

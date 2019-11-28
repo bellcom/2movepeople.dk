@@ -3,7 +3,10 @@
     <ul>
       {% for item in items %}
         <li>
-          <a href="{{ item.url }}">{{ item.title }}</a>
+          <a href="{{ item.url }}">
+            <span class="behindor"></span>
+            {{ item.title }}
+          </a>
 
           {% if item.below %}
             {{ _self.menu_links(item.below, attributes.removeClass(classes), menu_level + 1, classes) }}
