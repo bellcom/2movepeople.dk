@@ -7,6 +7,7 @@ dependencies:
     - field.field.simple_elements.paragraph_explainer_path.field_body
     - field.field.simple_elements.paragraph_explainer_path.field_heading
     - field.field.simple_elements.paragraph_explainer_path.field_path
+    - field.field.simple_elements.paragraph_explainer_path.field_path_item
   module:
     - text
 id: simple_elements.paragraph_explainer_path.default
@@ -36,6 +37,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_path_item:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
     region: content
 hidden:
   langcode: true

@@ -7,7 +7,9 @@ dependencies:
     - field.field.simple_elements.paragraph_explainer_path.field_body
     - field.field.simple_elements.paragraph_explainer_path.field_heading
     - field.field.simple_elements.paragraph_explainer_path.field_path
+    - field.field.simple_elements.paragraph_explainer_path.field_path_item
   module:
+    - inline_entity_form
     - text
 id: simple_elements.paragraph_explainer_path.default
 targetEntityType: simple_elements
@@ -37,6 +39,18 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_path_item:
+    weight: 3
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      override_labels: false
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
     region: content
 hidden:
   langcode: true

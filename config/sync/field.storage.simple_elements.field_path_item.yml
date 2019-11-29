@@ -1,0 +1,19 @@
+uuid: e2adf11e-484f-4677-9ceb-33c682f34f2b
+langcode: da
+status: true
+dependencies:
+  module:
+    - eck
+id: simple_elements.field_path_item
+field_name: field_path_item
+entity_type: simple_elements
+type: entity_reference
+settings:
+  target_type: simple_elements
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

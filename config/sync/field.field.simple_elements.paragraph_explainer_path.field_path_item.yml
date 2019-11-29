@@ -1,0 +1,28 @@
+uuid: a0f0a16b-ec71-4bac-94f6-d42c4f91aeac
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_type.simple_elements.paragraph_explainer_path
+    - eck.eck_type.simple_elements.paragraph_explainer_path_item
+    - field.storage.simple_elements.field_path_item
+id: simple_elements.paragraph_explainer_path.field_path_item
+field_name: field_path_item
+entity_type: simple_elements
+bundle: paragraph_explainer_path
+label: Element
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:simple_elements'
+  handler_settings:
+    target_bundles:
+      paragraph_explainer_path_item: paragraph_explainer_path_item
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
