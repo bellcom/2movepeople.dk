@@ -1,0 +1,9 @@
+uuid: 179ef720-2f55-431e-a1d7-8ca9b1763ed0
+langcode: da
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.simple_elements
+name: 'Sti element'
+type: paragraph_explainer_path_item
+description: ''

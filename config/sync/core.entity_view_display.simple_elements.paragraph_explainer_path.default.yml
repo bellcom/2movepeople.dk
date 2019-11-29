@@ -6,10 +6,8 @@ dependencies:
     - eck.eck_type.simple_elements.paragraph_explainer_path
     - field.field.simple_elements.paragraph_explainer_path.field_body
     - field.field.simple_elements.paragraph_explainer_path.field_heading
-    - field.field.simple_elements.paragraph_explainer_path.field_image
     - field.field.simple_elements.paragraph_explainer_path.field_path
   module:
-    - image
     - text
 id: simple_elements.paragraph_explainer_path.default
 targetEntityType: simple_elements
@@ -30,15 +28,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-  field_image:
-    weight: 3
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
     region: content
   field_path:
     weight: 0

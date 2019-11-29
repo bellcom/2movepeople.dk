@@ -4,6 +4,6 @@ status: true
 dependencies:
   config:
     - eck.eck_entity_type.simple_elements
-name: Path
+name: Sti
 type: paragraph_explainer_path
-description: 'A path for the explainer paragraph.'
+description: 'Sti til brug sammen med Forklarings paragraph''en.'

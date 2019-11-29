@@ -6,11 +6,8 @@ dependencies:
     - eck.eck_type.simple_elements.paragraph_explainer_path
     - field.field.simple_elements.paragraph_explainer_path.field_body
     - field.field.simple_elements.paragraph_explainer_path.field_heading
-    - field.field.simple_elements.paragraph_explainer_path.field_image
     - field.field.simple_elements.paragraph_explainer_path.field_path
-    - image.style.thumbnail
   module:
-    - image
     - text
 id: simple_elements.paragraph_explainer_path.default
 targetEntityType: simple_elements
@@ -32,14 +29,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_image:
-    weight: 3
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
     region: content
   field_path:
     weight: 0

@@ -1,25 +1,25 @@
-uuid: c7e8adce-ac1e-4034-8df0-1ed18d134807
+uuid: 9deaec5a-297e-4e41-9047-8e26b2399964
 langcode: da
 status: true
 dependencies:
   config:
-    - eck.eck_type.simple_elements.paragraph_explainer_path
+    - eck.eck_type.simple_elements.paragraph_explainer_path_item
     - field.storage.simple_elements.field_image
   module:
     - image
-id: simple_elements.paragraph_explainer_path.field_image
+id: simple_elements.paragraph_explainer_path_item.field_image
 field_name: field_image
 entity_type: simple_elements
-bundle: paragraph_explainer_path
+bundle: paragraph_explainer_path_item
 label: Billede
 description: ''
-required: true
-translatable: false
+required: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg'
+  file_extensions: 'png gif jpg jpeg svg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
