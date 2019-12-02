@@ -2,7 +2,7 @@ favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
   url: 'http://2movepeople.docksal/themes/custom/custom_theme/favicon.ico'
-  use_default: 1
+  use_default: 0
 schemas:
   bootstrap: 8000
   custom_base_theme: 8000
