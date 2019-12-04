@@ -1,0 +1,37 @@
+uuid: 8428fc4a-6d57-4d6e-ac2d-86e4d3ac48b3
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.simple_elements.tab_content
+    - eck.eck_type.simple_elements.paragraph_explainer_path
+    - field.field.simple_elements.paragraph_explainer_path.field_body
+    - field.field.simple_elements.paragraph_explainer_path.field_heading
+    - field.field.simple_elements.paragraph_explainer_path.field_path
+    - field.field.simple_elements.paragraph_explainer_path.field_path_item
+  module:
+    - text
+id: simple_elements.paragraph_explainer_path.tab_content
+targetEntityType: simple_elements
+bundle: paragraph_explainer_path
+mode: tab_content
+content:
+  field_body:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_heading:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_path: true
+  field_path_item: true
+  langcode: true

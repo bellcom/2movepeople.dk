@@ -1,0 +1,10 @@
+uuid: f5b96685-75b6-4942-8d25-fdbb9dbfccd4
+langcode: da
+status: true
+dependencies:
+  module:
+    - eck
+id: simple_elements.tab
+label: Tab
+targetEntityType: simple_elements
+cache: true

@@ -60,6 +60,39 @@ function custom_theme_preprocess_paragraph__text_with_image(&$variables) {
   }
 }
 
+/*
+ * Implements hook_preprocess_paragraph().
+ * For explainer paragraphs.
+ */
+function custom_theme_preprocess_paragraph__explainer(&$variables) {
+  $paragraph = $variables['paragraph'];
+  $variables['tabs'] = null;
+  $variables['tabs_content'] = null;
+  $view_builder = \Drupal::entityTypeManager()->getViewBuilder('paragraph');
+
+  if ($fields = $paragraph->get('field_path')->getValue()) {
+    $ids = [];
+
+    foreach ($fields as $field) {
+      $ids[] = $field['target_id'];
+    }
+
+    if (count($ids)) {
+
+      // Path.
+      if ($paragraph->field_path && !$paragraph->field_path->isEmpty()) {
+        $entities = entity_load_multiple('simple_elements', $ids);
+
+        // Tabs.
+        $variables['tab'] = entity_view_multiple($entities, 'tab');
+
+        // Tabs content.
+        $variables['tab_content'] = entity_view_multiple($entities, 'tab_content');
+      }
+    }
+  }
+}
+
 /**
  * Implements template_preprocess_taxonomy_term().
  */
@@ -101,4 +134,12 @@ function custom_theme_preprocess_user(&$variables) {
   $user = $variables['user'];
   $view_mode = $variables['elements']['#view_mode'];
   $variables['url'] = $user->toUrl();
+}
+
+/**
+ * Implements hook_preprocess_eck_entity().
+ */
+function custom_theme_preprocess_eck_entity(&$variables) {
+  $entity = $variables['eck_entity'];
+  $view_mode = $variables['elements']['#view_mode'];
 }

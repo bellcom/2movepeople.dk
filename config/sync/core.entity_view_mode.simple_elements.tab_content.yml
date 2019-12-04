@@ -1,0 +1,10 @@
+uuid: d7418022-1929-459b-8baa-1b25586476ed
+langcode: da
+status: true
+dependencies:
+  module:
+    - eck
+id: simple_elements.tab_content
+label: 'Tab indhold'
+targetEntityType: simple_elements
+cache: true
