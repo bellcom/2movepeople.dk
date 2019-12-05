@@ -20,7 +20,76 @@
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--explainer {}
+.paragraph--type--explainer {
+
+  .horizontal-tabs {
+
+    div {
+      display: inline-block;
+    }
+
+    button {
+      color: $brand-primary;
+      border: 1px solid $brand-primary;
+      background-color: #fff;
+
+      @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+
+      &.active {
+        background-color: $brand-secondary;
+        border-color: $brand-secondary;
+      }
+    }
+  }
+
+  .vertical-tabs {
+    padding: 20px 0;
+
+    border-right: 1px solid $brand-primary;
+
+    button {
+      position: relative;
+      display: block;
+
+      padding: 10px 50px;
+
+      width: 100%;
+
+      text-align: left;
+      font-weight: $font-weight-bold;
+
+      outline: 0;
+
+      background-color: transparent;
+      color: $text-muted;
+      border: none;
+
+      &.active {
+        color: $brand-primary;
+
+        &:after {
+          position: absolute;
+
+          content: "";
+          background-color: #fff;
+
+          width: 16px;
+          height: 16px;
+
+          left: 100%;
+          top: 50%;
+
+          margin-top: -8px;
+          margin-left: -8px;
+
+          background-image: url('../images/mini-polygon.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
 
 // --------------------------------------------------
 // Variants

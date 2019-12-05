@@ -1,9 +1,21 @@
-<div{{ attributes.addClass('tabba-item hidden level1') }}>
-  {{ content.field_heading }}
-  {{ content.field_body }}
+<div{{ attributes.addClass('tabba-item hidden') }}>
+  <div class="row">
+    <div class="col-sm-8">
+      {{ content.field_heading }}
+      {{ content.field_body }}
+    </div>
+  </div>
 
   <div class="tabba">
-    {{ tab }}
-    {{ tab_content }}
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="vertical-tabs">
+          {{ tab }}
+        </div>
+      </div>
+      <div class="col-sm-8">
+        {{ tab_content }}
+      </div>
+    </div>
   </div>
 </div>

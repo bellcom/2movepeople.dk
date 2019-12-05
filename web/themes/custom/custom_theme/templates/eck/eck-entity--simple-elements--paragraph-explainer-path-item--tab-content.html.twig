@@ -1,4 +1,10 @@
-<div{{ attributes.addClass('tabba-item hidden level2') }}>
-  {{ content.field_body }}
-  {{ content.field_image }}
+<div{{ attributes.addClass('tabba-item hidden') }}>
+  <div class="row">
+    <div class="col-sm-6">
+      {{ content.field_body }}
+    </div>
+    <div class="col-sm-6">
+      {{ content.field_image }}
+    </div>
+  </div>
 </div>

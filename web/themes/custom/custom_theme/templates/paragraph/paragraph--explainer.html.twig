@@ -11,9 +11,13 @@
         {{ content.field_heading }}
 
         <div class="tabba">
-          {{ tab }}
+          <div class="horizontal-tabs">
+            {{ tab }}
+          </div>
 
-          {{ tab_content }}
+          <div>
+            {{ tab_content }}
+          </div>
         </div>
       </div>
     {% endblock %}
