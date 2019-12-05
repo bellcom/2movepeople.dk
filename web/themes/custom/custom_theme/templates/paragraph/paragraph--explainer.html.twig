@@ -11,59 +11,11 @@
         {{ content.field_heading }}
 
         <div class="tabba">
-          <div class="tabba-tabs">
-            {{ tab }}
-          </div>
+          {{ tab }}
 
-          <div class="tabba-content">
-            {{ tab_content }}
-          </div>
+          {{ tab_content }}
         </div>
       </div>
     {% endblock %}
   </div>
-
-  <script>
-    (function() {
-      function handleToggle(event) {
-        var clickedElement = this;
-
-        for (var i = 0; i < toggles.length; i++) {
-          var toggle = toggles[i];
-          var isSame = toggle.isSameNode(clickedElement);
-
-          if (isSame) {
-            toggleElement(i);
-          }
-        }
-      }
-
-      function toggleElement(index) {
-        var contentItems = document.querySelectorAll('.tabba-content__item');
-
-        for (var i = 0; i < contentItems.length; i++) {
-          var contentItem = contentItems[i];
-
-          if (index === i) {
-            contentItem.classList.remove('hidden');
-          } else {
-            contentItem.classList.add('hidden');
-          }
-        }
-      }
-
-      // Show the first element upon page load.
-      toggleElement(0);
-
-      // Add eventListeners.
-      var toggles = document.querySelectorAll('.tabba-toggle__button');
-
-      for (var i = 0; i < toggles.length; i++) {
-        var toggle = toggles[i];
-
-        toggle.addEventListener('click', handleToggle);
-      }
-    })();
-  </script>
-
 {% endblock paragraph %}

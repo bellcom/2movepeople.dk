@@ -68,7 +68,6 @@ function custom_theme_preprocess_paragraph__explainer(&$variables) {
   $paragraph = $variables['paragraph'];
   $variables['tabs'] = null;
   $variables['tabs_content'] = null;
-  $view_builder = \Drupal::entityTypeManager()->getViewBuilder('paragraph');
 
   if ($fields = $paragraph->get('field_path')->getValue()) {
     $ids = [];
@@ -141,5 +140,31 @@ function custom_theme_preprocess_user(&$variables) {
  */
 function custom_theme_preprocess_eck_entity(&$variables) {
   $entity = $variables['eck_entity'];
-  $view_mode = $variables['elements']['#view_mode'];
+  $variables['tabs'] = null;
+  $variables['tabs_content'] = null;
+
+  if ($entity->hasField('field_path_item')) {
+
+    if ($fields = $entity->get('field_path_item')->getValue()) {
+      $ids = [];
+
+      foreach ($fields as $field) {
+        $ids[] = $field['target_id'];
+      }
+
+      if (count($ids)) {
+
+        // Path item.
+        if ($entity->field_path_item && !$entity->field_path_item->isEmpty()) {
+          $entities = entity_load_multiple('simple_elements', $ids);
+
+          // Tabs.
+          $variables['tab'] = entity_view_multiple($entities, 'tab');
+
+          // Tabs content.
+          $variables['tab_content'] = entity_view_multiple($entities, 'tab_content');
+        }
+      }
+    }
+  }
 }

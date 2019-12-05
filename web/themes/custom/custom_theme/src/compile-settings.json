@@ -6,6 +6,7 @@
     "node_modules/jquery-slinky/dist/jquery.slinky.js",
     "src/javascripts/faq-items.js",
     "src/javascripts/sidebar-toggle.js",
+    "src/javascripts/tabba.js",
     "src/javascripts/app.js"
   ],
   "styles": [
