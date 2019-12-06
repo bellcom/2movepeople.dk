@@ -58,6 +58,19 @@ $paragraph-inner-spacing-bottom-lg: 35px;
   }
 }
 
+.field--name-field-paragraphs-wide {
+
+  > .field--item {
+
+    + .field--item {
+
+      .paragraph--type--simple-text {
+        margin-top: ((0 - $grid-gutter-width) / 2);
+      }
+    }
+  }
+}
+
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
@@ -97,6 +110,19 @@ $paragraph-inner-spacing-bottom-lg: 35px;
     .field--name-field-subheading {}
 
     .field--name-field-body {}
+  }
+
+  .field--name-field-paragraphs-wide {
+
+    > .field--item {
+
+      + .field--item {
+
+        .paragraph--type--simple-text {
+          margin-top: ((0 - ($grid-gutter-width * 2)) / 2);
+        }
+      }
+    }
   }
 }
 
