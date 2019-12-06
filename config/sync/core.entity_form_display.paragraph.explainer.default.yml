@@ -27,11 +27,15 @@ content:
       form_mode: default
       label_singular: ''
       label_plural: ''
+      collapsible: true
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: true
       override_labels: false
-      collapsible: false
       collapsed: false
     third_party_settings: {  }
-    type: inline_entity_form_simple
+    type: inline_entity_form_complex
     region: content
 hidden:
   created: true
