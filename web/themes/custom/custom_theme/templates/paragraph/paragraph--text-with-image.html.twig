@@ -8,55 +8,52 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       <div class="container">
-        <div class="paragraph__inner">
 
-          {# Begin - heading #}
-          {{ content.field_heading }}
-          {# End - heading #}
+        {# Begin - heading #}
+        {{ content.field_heading }}
+        {# End - heading #}
 
-          <div class="row row--equal-height-columns">
+        <div class="row row--equal-height-columns">
 
-            {% if image_position == 'left' %}
-              <div class="col-xs-12 col-sm-5">
+          {% if image_position == 'left' %}
+            <div class="col-xs-12 col-sm-5">
 
-                {# Begin - image #}
-                {{ content.field_image }}
-                {# End - image #}
+              {# Begin - image #}
+              {{ content.field_image }}
+              {# End - image #}
 
-              </div>
-              <div class="col-xs-12 col-sm-7">
+            </div>
+            <div class="col-xs-12 col-sm-7">
 
-                {# Begin - subheading #}
-                {{ content.field_subheading }}
-                {# End - subheading #}
+              {# Begin - subheading #}
+              {{ content.field_subheading }}
+              {# End - subheading #}
 
-                {# Begin - body #}
-                {{ content.field_body }}
-                {# End - body #}
+              {# Begin - body #}
+              {{ content.field_body }}
+              {# End - body #}
 
-              </div>
-            {% else %}
-              <div class="col-xs-12 col-sm-7">
+            </div>
+          {% else %}
+            <div class="col-xs-12 col-sm-7">
 
-                {# Begin - subheading #}
-                {{ content.field_subheading }}
-                {# End - subheading #}
+              {# Begin - subheading #}
+              {{ content.field_subheading }}
+              {# End - subheading #}
 
-                {# Begin - body #}
-                {{ content.field_body }}
-                {# End - body #}
+              {# Begin - body #}
+              {{ content.field_body }}
+              {# End - body #}
 
-              </div>
-              <div class="col-xs-12 col-sm-5">
+            </div>
+            <div class="col-xs-12 col-sm-5">
 
-                {# Begin - image #}
-                {{ content.field_image }}
-                {# End - image #}
+              {# Begin - image #}
+              {{ content.field_image }}
+              {# End - image #}
 
-              </div>
-            {% endif %}
-          </div>
-
+            </div>
+          {% endif %}
         </div>
       </div>
 

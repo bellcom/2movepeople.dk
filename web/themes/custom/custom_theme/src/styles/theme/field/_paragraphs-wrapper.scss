@@ -27,6 +27,15 @@ $lg-field-paragraphs-wrapper-padding-top-bottom: 120px;
   padding-top: $xs-field-paragraphs-wrapper-padding-top-bottom;
   padding-bottom: $xs-field-paragraphs-wrapper-padding-top-bottom;
 }
+.field--name-field-paragraphs-wide {
+
+  > .field--item {
+
+    + .field--item {
+      margin-top: $grid-gutter-width;
+    }
+  }
+}
 
 // --------------------------------------------------
 // Variants
@@ -55,7 +64,18 @@ $lg-field-paragraphs-wrapper-padding-top-bottom: 120px;
 }
 
 // Desktop - and up
-@media #{$breakpoint-desktop-and-up} {}
+@media #{$breakpoint-desktop-and-up} {
+
+  .field--name-field-paragraphs-wide {
+
+    > .field--item {
+
+      + .field--item {
+        margin-top: $grid-gutter-width * 2;
+      }
+    }
+  }
+}
 
 // Desktop - only
 @media #{$breakpoint-desktop-only} {
