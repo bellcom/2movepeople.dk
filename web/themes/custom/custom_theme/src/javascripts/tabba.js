@@ -20,35 +20,41 @@
     var toggles = wrapper.querySelectorAll('.js-tabba-toggle');
     var contentItems = wrapper.querySelectorAll('.tabba-item');
 
-    // Show content item.
-    for (var i = 0; i < contentItems.length; i++) {
-      var contentItem = contentItems[i];
+    // Show content item
+    var contentItemIndex = 0;
+    for (var contentItemInt = 0; contentItemInt < contentItems.length; contentItemInt++) {
+      var contentItem = contentItems[contentItemInt];
       var contentItemWrapper = contentItem.closest('.tabba');
-      var wrapperIsSame = contentItemWrapper.isSameNode(wrapper);
+      var contentWrapperIsSame = contentItemWrapper.isSameNode(wrapper);
 
-      if (wrapperIsSame) {
+      if (contentWrapperIsSame) {
 
-        if (index === i) {
+        if (index === contentItemIndex) {
           contentItem.classList.remove('hidden');
         } else {
           contentItem.classList.add('hidden');
         }
+
+        contentItemIndex++;
       }
     }
 
     // Set active class on toggle.
-    for (var i = 0; i < toggles.length; i++) {
-      var toggle = toggles[i];
+    var toggleIndex = 0;
+    for (var toggleInt = 0; toggleInt < toggles.length; toggleInt++) {
+      var toggle = toggles[toggleInt];
       var toggleWrapper = toggle.closest('.tabba');
-      var wrapperIsSame = toggleWrapper.isSameNode(wrapper);
+      var toggleWrapperIsSame = toggleWrapper.isSameNode(wrapper);
 
-      if (wrapperIsSame) {
+      if (toggleWrapperIsSame) {
 
-        if (index === i) {
+        if (index === toggleIndex) {
           toggle.classList.add('active');
         } else {
           toggle.classList.remove('active');
         }
+
+        toggleIndex++;
       }
     }
   }
@@ -56,16 +62,16 @@
   // Add eventListeners.
   var wrappers = document.querySelectorAll('.tabba');
 
-  for (var i = 0; i < wrappers.length; i++) {
-    var wrapper = wrappers[i];
+  for (var wrapperInt = 0; wrapperInt < wrappers.length; wrapperInt++) {
+    var wrapper = wrappers[wrapperInt];
     var toggles = wrapper.querySelectorAll('.js-tabba-toggle');
 
     // Show the first element upon page load.
     toggleElement(wrapper, 0);
 
     // Run through toggles.
-    for (var i = 0; i < toggles.length; i++) {
-      var toggle = toggles[i];
+    for (var toggleInt = 0; toggleInt < toggles.length; toggleInt++) {
+      var toggle = toggles[toggleInt];
 
       toggle.addEventListener('click', handleToggle);
     }

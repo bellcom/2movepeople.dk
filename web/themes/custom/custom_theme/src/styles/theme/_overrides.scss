@@ -196,6 +196,13 @@ img {
       justify-content: center;
     }
   }
+
+  .row--centered-column-content {
+
+    > [class*='col-'] {
+      justify-content: center;
+    }
+  }
 }
 
 // No flexbox
