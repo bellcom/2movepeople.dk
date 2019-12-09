@@ -20,7 +20,14 @@
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--showcase {}
+.paragraph--type--showcase {
+
+  button[data-action="stop"],
+  .tns-nav,
+  .tns-controls {
+    display: none;
+  }
+}
 
 // --------------------------------------------------
 // Variants
