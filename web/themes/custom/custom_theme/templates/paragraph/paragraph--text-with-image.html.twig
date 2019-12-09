@@ -35,7 +35,14 @@
 
             </div>
           {% else %}
-            <div class="col-xs-12 col-sm-7">
+            <div class="col-xs-12 col-sm-5 col-sm-push-7">
+
+              {# Begin - image #}
+              {{ content.field_image }}
+              {# End - image #}
+
+            </div>
+            <div class="col-xs-12 col-sm-7 col-sm-pull-5">
 
               {# Begin - subheading #}
               {{ content.field_subheading }}
@@ -44,13 +51,6 @@
               {# Begin - body #}
               {{ content.field_body }}
               {# End - body #}
-
-            </div>
-            <div class="col-xs-12 col-sm-5">
-
-              {# Begin - image #}
-              {{ content.field_image }}
-              {# End - image #}
 
             </div>
           {% endif %}
