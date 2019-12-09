@@ -1,6 +1,6 @@
 /*!
  * modernizr v3.8.0
- * Build https://modernizr.com/download?-arrow-contains-flexbox-history-svg-target-template-texttrackapi_track-touchevents-addtest-fnbind-printshiv-setclasses-testprop-dontmin
+ * Build https://modernizr.com/download?-arrow-contains-flexbox-history-srcset-svg-target-template-texttrackapi_track-touchevents-addtest-fnbind-printshiv-setclasses-testprop-dontmin
  *
  * Copyright (c)
  *  Faruk Ates
@@ -1967,6 +1967,27 @@ Check if browser implements ECMAScript 6 `String.prototype.contains` per specifi
 */
 
   Modernizr.addTest('contains', is(String.prototype.contains, 'function'));
+
+/*!
+{
+  "name": "srcset attribute",
+  "property": "srcset",
+  "caniuse": "srcset",
+  "tags": ["image"],
+  "notes": [{
+    "name": "Smashing Magazine Article",
+    "href": "https://www.smashingmagazine.com/2013/08/webkit-implements-srcset-and-why-its-a-good-thing/"
+  },{
+    "name": "Generate multi-resolution images for srcset with Grunt",
+    "href": "https://addyosmani.com/blog/generate-multi-resolution-images-for-srcset-with-grunt/"
+  }]
+}
+!*/
+/* DOC
+Test for the srcset attribute of images
+*/
+
+  Modernizr.addTest('srcset', 'srcset' in createElement('img'));
 
 
   // Run each test

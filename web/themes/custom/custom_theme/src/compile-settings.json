@@ -4,6 +4,7 @@
     "node_modules/flexy-header/javascripts/flexy-header.js",
     "node_modules/pace-progress/pace.js",
     "node_modules/jquery-slinky/dist/jquery.slinky.js",
+    "node_modules/tiny-slider/dist/tiny-slider.js",
     "src/javascripts/faq-items.js",
     "src/javascripts/sidebar-toggle.js",
     "src/javascripts/tabba.js",

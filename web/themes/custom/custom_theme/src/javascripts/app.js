@@ -11,4 +11,12 @@ jQuery(function ($) {
 
   // Enable tooltips.
   $('[data-toggle="tooltip"]').tooltip();
+
+  // Showcases.
+  var slider = tns({
+    container: '.showcases',
+    items: 1,
+    slideBy: 'page',
+    autoplay: true
+  });
 });
