@@ -393,6 +393,39 @@ $paragraph-inner-spacing-bottom-lg: 130px;
       transform: translate3d(0, 0, 0) rotate(325deg) scale(1.39);
     }
   }
+
+  .paragraph--type--banner {
+
+    .field--name-field-link {
+      text-align: center;
+
+      a {
+        font-size: $font-size-small;
+      }
+    }
+
+    .field--name-field-heading {
+      text-align: center;
+
+      .heading-h1, .heading-h2, .heading-h3, .heading-h4, .heading-h5, .heading-h6,
+      h1, h2, h3, h4, h5, h6 {
+        font-size: $font-size-h2;
+      }
+
+      + .field--name-field-body {
+        margin-top: 30px;
+      }
+    }
+
+    .field--name-field-body {
+      text-align: center;
+      font-size: $font-size-small;
+
+      + .field--name-field-link {
+        margin-top: 30px;
+      }
+    }
+  }
 }
 
 // Tablet - and up
