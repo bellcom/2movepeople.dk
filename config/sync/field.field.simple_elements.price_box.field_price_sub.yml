@@ -1,16 +1,16 @@
-uuid: 46441ec7-9083-44a1-ae32-2481e1635ae6
+uuid: c2df1944-5183-4c7e-8e5b-11df2725a75c
 langcode: da
 status: true
 dependencies:
   config:
     - eck.eck_type.simple_elements.price_box
-    - field.storage.simple_elements.field_price
-id: simple_elements.price_box.field_price
-field_name: field_price
+    - field.storage.simple_elements.field_price_sub
+id: simple_elements.price_box.field_price_sub
+field_name: field_price_sub
 entity_type: simple_elements
 bundle: price_box
-label: 'Pris (fremhævet)'
-description: 'Eks. "Pr. måned 4.995 kr."'
+label: Pris
+description: ''
 required: false
 translatable: false
 default_value: {  }

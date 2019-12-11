@@ -8,6 +8,7 @@ dependencies:
     - field.field.simple_elements.price_box.field_heading
     - field.field.simple_elements.price_box.field_link
     - field.field.simple_elements.price_box.field_price
+    - field.field.simple_elements.price_box.field_price_sub
   module:
     - link
     - text
@@ -33,7 +34,7 @@ content:
     type: string_textfield
     region: content
   field_link:
-    weight: 4
+    weight: 5
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -42,6 +43,14 @@ content:
     region: content
   field_price:
     weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_price_sub:
+    weight: 4
     settings:
       size: 60
       placeholder: ''

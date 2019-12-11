@@ -1,0 +1,21 @@
+uuid: 294f46f9-347d-4a51-b3ad-97040e7485b7
+langcode: da
+status: true
+dependencies:
+  module:
+    - eck
+id: simple_elements.field_price_sub
+field_name: field_price_sub
+entity_type: simple_elements
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

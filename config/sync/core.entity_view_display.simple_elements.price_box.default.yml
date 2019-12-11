@@ -8,6 +8,7 @@ dependencies:
     - field.field.simple_elements.price_box.field_heading
     - field.field.simple_elements.price_box.field_link
     - field.field.simple_elements.price_box.field_price
+    - field.field.simple_elements.price_box.field_price_sub
   module:
     - link
     - text
@@ -45,6 +46,14 @@ content:
     region: content
   field_price:
     weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_price_sub:
+    weight: 4
     label: hidden
     settings:
       link_to_entity: false
