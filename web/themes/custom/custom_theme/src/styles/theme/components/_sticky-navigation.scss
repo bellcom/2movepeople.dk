@@ -68,18 +68,24 @@ $sticky-navigation-height--lg: 140px;
 
     padding: 0 20px; // Add padding here for fat fingers.
 
-    font-size: $font-size-large;
+    font-size: $font-size-base;
+
+    &:hover {
+      text-decoration: none;
+    }
 
     .behindor {
       position: absolute;
       display: block;
 
-      top: 45px;
-      left: 0;
-      right: 0;
-      bottom: 45px;
+      top: 55px;
+      left: 10px;
+      right: 10px;
+      bottom: 55px;
 
       z-index: -1;
+
+      transition: background-color .2s ease-in-out;
 
       background-color: rgba(255, 255, 255, .4);
     }
@@ -105,7 +111,14 @@ $sticky-navigation-height--lg: 140px;
     a {
 
       .behindor {
-        background-color: $path-borger-color;
+        background-color: rgba($path-borger-color, .7);
+      }
+
+      &:hover {
+
+        .behindor {
+          background-color: $path-hr-color;
+        }
       }
     }
   }
@@ -118,7 +131,14 @@ $sticky-navigation-height--lg: 140px;
     a {
 
       .behindor {
-        background-color: $path-hr-color;
+        background-color: rgba($path-hr-color, .7);
+      }
+
+      &:hover {
+
+        .behindor {
+          background-color: $path-hr-color;
+        }
       }
     }
   }
