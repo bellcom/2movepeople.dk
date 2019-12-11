@@ -57,18 +57,6 @@ body {
     }
   }
 
-  .form-control {
-    @extend .input-lg;
-  }
-
-  .webform-actions {
-
-    .btn {
-      @extend .btn-block;
-      @extend .btn-lg;
-    }
-  }
-
   .flexy-list {
 
     > * {

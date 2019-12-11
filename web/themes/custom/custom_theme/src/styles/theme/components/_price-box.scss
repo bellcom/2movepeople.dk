@@ -38,6 +38,7 @@
 
     + .field--name-field-body,
     + .field--name-field-price,
+    + .field--name-field-price-sub,
     + .field--name-field-link {
       margin-top: 45px;
     }
@@ -45,13 +46,35 @@
 
   .field--name-field-body {
 
+    p:last-child {
+      margin-bottom: 0;
+    }
+
     + .field--name-field-price,
+    + .field--name-field-price-sub,
     + .field--name-field-link {
       margin-top: 45px;
     }
   }
 
   .field--name-field-price {
+
+    .heading-h1, .heading-h2, .heading-h3, .heading-h4, .heading-h5, .heading-h6,
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+    }
+
+    + .field--name-field-price-sub {
+      margin-top: 3px;
+    }
+
+    + .field--name-field-link {
+      margin-top: 45px;
+    }
+  }
+
+  .field--name-field-price-sub {
+    font-size: $font-size-small;
 
     .heading-h1, .heading-h2, .heading-h3, .heading-h4, .heading-h5, .heading-h6,
     h1, h2, h3, h4, h5, h6 {
