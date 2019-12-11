@@ -63,6 +63,14 @@ $paragraph-inner-spacing-bottom-lg: 130px;
     }
   }
 
+  .field--name-field-body {
+    font-size: $font-size-large;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   .animator {
     position: absolute;
 
@@ -257,16 +265,21 @@ $paragraph-inner-spacing-bottom-lg: 130px;
   .paragraph--type--banner-contextual-background {
 
     .field--name-field-heading {
-      max-width: 60%;
+      max-width: 85%;
       margin-left: auto;
+
+      .heading-h1, .heading-h2, .heading-h3, .heading-h4, .heading-h5, .heading-h6,
+      h1, h2, h3, h4, h5, h6 {
+        font-size: 64px;
+      }
     }
 
     .field--name-field-subheading {
-      max-width: 50%;
+      max-width: 70%;
     }
 
     .field--name-field-body {
-      max-width: 50%;
+      max-width: 60%;
       margin-left: auto;
     }
 
