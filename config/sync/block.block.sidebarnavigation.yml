@@ -1,25 +1,25 @@
-uuid: 0d0d705e-885f-43a6-bd74-611817a8393f
+uuid: 2599ed25-634e-413a-8418-3d7fbfad8b0b
 langcode: da
 status: true
 dependencies:
   config:
-    - system.menu.main
+    - system.menu.sidebar-navigation
   module:
     - system
   theme:
     - custom_theme
-id: sticky_navigation__left
+id: sidebarnavigation
 theme: custom_theme
 region: sticky_navigation__left
 weight: 0
 provider: null
-plugin: 'system_menu_block:main'
+plugin: 'system_menu_block:sidebar-navigation'
 settings:
-  id: 'system_menu_block:main'
-  label: 'Primær navigation'
+  id: 'system_menu_block:sidebar-navigation'
+  label: 'Sidebar navigation'
   provider: system
   label_display: '0'
   level: 1
-  depth: 1
+  depth: 0
   expand_all_items: false
 visibility: {  }
