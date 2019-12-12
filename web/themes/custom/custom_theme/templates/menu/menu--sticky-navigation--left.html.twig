@@ -2,8 +2,12 @@
   {% if items %}
     <ul>
       {% for item in items %}
+        {% set item_classes = [
+          item.in_active_trail ? 'active',
+        ] %}
+
         <li>
-          <a href="{{ item.url }}">
+          <a href="{{ item.url }}" {{ item.attributes.addClass(item_classes) }}>
             <span class="behindor"></span>
             {{ item.title }}
           </a>

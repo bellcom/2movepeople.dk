@@ -120,6 +120,17 @@ $sticky-navigation-height--lg: 140px;
           background-color: $path-hr-color;
         }
       }
+
+      &.active {
+
+        &,
+        &:hover {
+
+          .behindor {
+            background-color: rgba(#60A4DA, .7);
+          }
+        }
+      }
     }
   }
 }
@@ -138,6 +149,17 @@ $sticky-navigation-height--lg: 140px;
 
         .behindor {
           background-color: $path-hr-color;
+        }
+      }
+
+      &.active {
+
+        &,
+        &:hover {
+
+          .behindor {
+            background-color: #82CBD0;
+          }
         }
       }
     }
