@@ -29,7 +29,12 @@
   height: 40px;
   width: 40px;
 
-  background-color: rgba(#fff, .6);
+  font-size: $font-size-small;
+
+  background-image: url('../images/some-background.svg');
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 
   &, &:hover {
     text-decoration: none;
@@ -39,17 +44,6 @@
     display: inline-block;
 
     color: $brand-primary;
-  }
-
-  .pentagon {
-    position:absolute;
-    left: 0;
-    //top: 30px;
-    //bottom: 0;
-    //right: 0;
-    //margin: auto;
-    //
-    //@include pentagon(100);
   }
 }
 
