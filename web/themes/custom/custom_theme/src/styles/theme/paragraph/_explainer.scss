@@ -51,7 +51,7 @@
       position: relative;
       display: block;
 
-      padding: 10px 50px;
+      padding: 10px 15px 10px 0;
 
       width: 100%;
 
@@ -125,6 +125,13 @@
 
     .horizontal-tabs {
       margin-bottom: 70px;
+    }
+
+    .vertical-tabs {
+
+      button {
+        padding: 10px 60px;
+      }
     }
   }
 }
