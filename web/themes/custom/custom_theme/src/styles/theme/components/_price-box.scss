@@ -21,7 +21,7 @@
 // --------------------------------------------------
 
 .price-box {
-  padding: 40px 20px;
+  padding: 40px 10px;
 
   margin-bottom: $grid-gutter-width;
 
@@ -121,7 +121,7 @@
 @media #{$breakpoint-desktop-and-up} {
 
   .price-box {
-    padding: 60px 40px;
+    padding: 60px 15px;
   }
 }
 
