@@ -74,6 +74,13 @@
 
     text-align: center;
   }
+
+  .flexy-header__sidebar-toggle {
+    width: $sticky-navigation-height--md;
+    margin-right: (0 - ($grid-gutter-width / 2));
+
+    text-align: center;
+  }
 }
 
 // Desktop - only
@@ -83,6 +90,10 @@
 @media #{$breakpoint-large-desktop-and-up} {
 
   .flexy-header__logo {
+    width: $sticky-navigation-height--lg;
+  }
+
+  .flexy-header__sidebar-toggle {
     width: $sticky-navigation-height--lg;
   }
 }
