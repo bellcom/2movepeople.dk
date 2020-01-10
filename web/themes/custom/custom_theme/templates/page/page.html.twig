@@ -32,10 +32,31 @@
 
   <!-- Begin - content -->
   <main class="layout__content" role="main">
+
+    <!-- Begin - logo -->
+    <a href="{{ url('<front>') }}"
+       class="sticky-element sticky-element--top-left sticky-logo hidden-xs hidden-sm">
+      {% if current_path == 'borger' %}
+        <img src="{{ base_path ~ directory }}/dist/images/logo--borger.svg">
+      {% elseif current_path == 'hr' %}
+        <img src="{{ base_path ~ directory }}/dist/images/logo--hr.svg">
+      {% else %}
+        <img src="{{ base_path ~ directory }}/dist/images/logo.svg">
+      {% endif %}
+    </a>
+    <!-- End - logo -->
+
+    <!-- Begin - responsive toggle -->
+    <button
+      class="sticky-element sticky-element--top-right js-sidebar-toggle sticky-toggle hidden-xs hidden-sm">
+      <img src="{{ base_path ~ directory }}/dist/images/burger-menu.svg">
+    </button>
+    <!-- End - responsive toggle -->
+
     <header class="flexy-header flexy-header--static hidden"></header>
 
     <!-- Begin - header sticky -->
-    <header class="flexy-header flexy-header--sticky flexy-header--pinned">
+    <header class="flexy-header flexy-header--sticky flexy-header--pinned hidden-md hidden-lg">
       <div class="flexy-header__row">
         <div class="container-fluid">
           <div class="flexy-row">

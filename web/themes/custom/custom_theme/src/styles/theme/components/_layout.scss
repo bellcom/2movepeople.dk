@@ -74,6 +74,25 @@ body {
   padding-bottom: 30px;
 }
 
+.sticky-logo {
+  margin-top: 35px;
+  width: $sticky-navigation-height--md;
+
+  text-align: center;
+
+  img {
+    width: 68px;
+  }
+}
+.sticky-toggle {
+  margin-top: 50px;
+  margin-right: 50px;
+
+  border: 0;
+
+  background-color: transparent;
+}
+
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
@@ -135,6 +154,10 @@ body {
       left: $sticky-navigation-height--md;
     }
   }
+
+  .sticky-logo {
+    width: $sticky-navigation-height--md;
+  }
 }
 
 // Large desktop - and up
@@ -146,6 +169,10 @@ body {
     .line {
       left: $sticky-navigation-height--lg;
     }
+  }
+
+  .sticky-logo {
+    width: $sticky-navigation-height--lg;
   }
 }
 

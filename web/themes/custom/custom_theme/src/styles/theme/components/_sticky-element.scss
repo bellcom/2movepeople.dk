@@ -1,0 +1,95 @@
+// |--------------------------------------------------------------------------
+// | Sticky element.
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .sticky-element
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+$sticky-element-horizontal-distance: 0;
+$sticky-element-vertical-distance: 0;
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+@mixin sticky-element-mixin() {}
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.sticky-element {
+  position: fixed;
+
+  z-index: $zindex-navbar;
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+.sticky-element--top-left {
+  top: $sticky-element-vertical-distance;
+  right: auto;
+  left: $sticky-element-horizontal-distance;
+
+  .toolbar-horizontal.toolbar-fixed & {
+    top: 39px + $sticky-element-vertical-distance;
+  }
+
+  .toolbar-horizontal.toolbar-fixed.toolbar-tray-open & {
+    top: 79px + $sticky-element-vertical-distance;
+  }
+}
+.sticky-element--top-right {
+  top: $sticky-element-vertical-distance;
+  right: $sticky-element-horizontal-distance;
+  left: auto;
+
+  .toolbar-horizontal.toolbar-fixed & {
+    top: 39px + $sticky-element-vertical-distance;
+  }
+
+  .toolbar-horizontal.toolbar-fixed.toolbar-tray-open & {
+    top: 79px + $sticky-element-vertical-distance;
+  }
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media #{$breakpoint-mobile-and-up} {}
+
+// Mobile - only
+@media #{$breakpoint-mobile-only} {}
+
+// Tablet - and up
+@media #{$breakpoint-tablet-and-up} {}
+
+// Tablet - only
+@media #{$breakpoint-tablet-only} {}
+
+// Desktop - and up
+@media #{$breakpoint-desktop-and-up} {}
+
+// Desktop - only
+@media #{$breakpoint-desktop-only} {}
+
+// Large desktop - and up
+@media #{$breakpoint-large-desktop-and-up} {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}
