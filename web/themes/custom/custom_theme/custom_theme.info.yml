@@ -7,6 +7,7 @@ base theme: custom_base_theme
 package: Custom
 
 regions:
+  flexy_navigation__primary: 'Flexy navigation - primary navigation'
   sidr_right__primary: 'Sidebar - right - primary navigation'
   sticky_navigation__left: 'Sticky navigation - left'
   highlighted: 'Highlighted'

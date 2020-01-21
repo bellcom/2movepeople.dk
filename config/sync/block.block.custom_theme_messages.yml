@@ -1,6 +1,6 @@
 uuid: c23c5d23-a5d0-4544-9565-986e9213a9c1
 langcode: da
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
 id: custom_theme_messages
 theme: custom_theme
-region: sidr_right__primary
-weight: -50
+region: highlighted
+weight: -8
 provider: null
 plugin: system_messages_block
 settings:

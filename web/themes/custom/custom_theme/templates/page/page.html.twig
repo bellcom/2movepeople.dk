@@ -73,6 +73,15 @@
             </a>
             <!-- End - logo -->
 
+            {% if page.flexy_navigation__primary %}
+              <!-- Begin - navigation -->
+              <nav class="flexy-header__navigation__wrapper"
+                   role="navigation">
+                {{ page.flexy_navigation__primary }}
+              </nav>
+              <!-- End - navigation -->
+            {% endif %}
+
             <div class="flexy-spacer"></div>
 
             <!-- Begin - responsive toggle -->

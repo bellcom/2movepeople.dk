@@ -1,6 +1,6 @@
 uuid: 99d82ad8-c779-48bc-a9db-db4e6609082a
 langcode: da
-status: false
+status: true
 dependencies:
   theme:
     - custom_theme
@@ -8,8 +8,8 @@ _core:
   default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
 id: custom_theme_local_tasks
 theme: custom_theme
-region: sidr_right__primary
-weight: 10
+region: highlighted
+weight: -9
 provider: null
 plugin: local_tasks_block
 settings:
