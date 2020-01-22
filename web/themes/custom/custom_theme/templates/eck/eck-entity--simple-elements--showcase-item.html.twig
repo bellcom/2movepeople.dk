@@ -9,7 +9,7 @@
     </div>
     <div class="col-md-4 col-lg-3" style="justify-content: center;">
       <div class="showcase__content-wrapper">
-        <div class="text-right">
+        <div class="text-right hidden-xs">
           <button class="showcase__toggle showcase__toggle--next js-show-next-showcase">
             <img src="{{ base_path ~ directory }}/dist/images/showcase-next.svg">
           </button>
@@ -19,9 +19,21 @@
           {{ content.field_body }}
         </div>
 
-        <div>
+        <div class="hidden-xs">
           <button class="showcase__toggle showcase__toggle--next js-show-previous-showcase">
             <img src="{{ base_path ~ directory }}/dist/images/showcase-previous.svg">
+          </button>
+        </div>
+
+        <div class="flexy-row">
+          <button class="showcase__toggle showcase__toggle--next js-show-previous-showcase">
+            <img src="{{ base_path ~ directory }}/dist/images/showcase-previous.svg">
+          </button>
+
+          <div class="flexy-spacer"></div>
+
+          <button class="showcase__toggle showcase__toggle--next js-show-next-showcase">
+            <img src="{{ base_path ~ directory }}/dist/images/showcase-next.svg">
           </button>
         </div>
       </div>
