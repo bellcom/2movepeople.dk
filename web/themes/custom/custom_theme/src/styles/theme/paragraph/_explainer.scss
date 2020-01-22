@@ -103,7 +103,21 @@
 @media #{$breakpoint-mobile-and-up} {}
 
 // Mobile - only
-@media #{$breakpoint-mobile-only} {}
+@media #{$breakpoint-mobile-only} {
+
+  .paragraph--type--explainer {
+
+    .tabba-item {
+
+      .tabba-item {
+
+        .field--name-field-heading {
+          font-weight: $font-weight-bold;
+        }
+      }
+    }
+  }
+}
 
 // Tablet - and up
 @media #{$breakpoint-tablet-and-up} {}

@@ -1,4 +1,4 @@
-<div{{ attributes.addClass('tabba-item hidden') }}>
+<div{{ attributes.addClass('tabba-item hidden visible-xs') }}>
   <div class="row row--equal-height-columns row--centered-column-content">
     <div class="col-sm-6 col-sm-push-6">
       <div class="text-center">
@@ -6,6 +6,10 @@
       </div>
     </div>
     <div class="col-sm-6 col-sm-pull-6">
+      <div class="visible-xs">
+        {{ content.field_heading }}
+      </div>
+
       {{ content.field_body }}
     </div>
   </div>
