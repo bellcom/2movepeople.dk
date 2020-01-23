@@ -10,7 +10,7 @@ schemas:
 features:
   comment_user_picture: 1
   comment_user_verification: 1
-  favicon: 1
+  favicon: 0
   node_user_picture: 1
 logo:
   path: ''
@@ -18,6 +18,7 @@ logo:
   use_default: 1
 table_responsive: '-1'
 region_wells:
+  flexy_navigation__primary: ''
   sidr_right__primary: ''
   sticky_navigation__left: ''
   highlighted: ''
@@ -42,7 +43,7 @@ phone_readable: ''
 email: ''
 working_hours: ''
 facebook: 1
-facebook_url: 'http://example.com'
+facebook_url: 'https://www.facebook.com/2movepeople-106379747576092/'
 facebook_tooltip: 'Besøg os på facebook'
 twitter: 0
 twitter_url: ''
@@ -50,11 +51,11 @@ twitter_tooltip: ''
 googleplus: 0
 googleplus_url: ''
 googleplus_tooltip: ''
-instagram: 1
+instagram: 0
 instagram_url: 'http://example.com'
 instagram_tooltip: 'Besøg os på Instagram'
 linkedin: 1
-linkedin_url: 'http://example.com'
+linkedin_url: 'https://www.linkedin.com/company/2movepeople/'
 linkedin_tooltip: 'Besøg os på LinkedIn'
 pinterest: 0
 pinterest_url: ''
