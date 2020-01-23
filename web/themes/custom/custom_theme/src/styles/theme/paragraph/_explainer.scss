@@ -111,6 +111,10 @@
 
       .tabba-item {
 
+        &.hidden {
+          display: block !important;
+        }
+
         .field--name-field-heading {
           font-weight: $font-weight-bold;
         }
