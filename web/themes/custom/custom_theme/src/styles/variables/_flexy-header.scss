@@ -1,9 +1,9 @@
 // Static
-$flexy-header-static-background-color: transparent;
+$flexy-header-static-background-color: rgba(255, 255, 255, .96);
 
 // Sticky
 $flexy-header-sticky-zindex: 450;
-$flexy-header-sticky-background-color: transparent;
+$flexy-header-sticky-background-color: rgba(255, 255, 255, .96);
 $flexy-header-sticky-unpinned-box-shadow: none;
 
 // Responsive (static)
