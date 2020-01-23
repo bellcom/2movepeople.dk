@@ -83,8 +83,6 @@
           z-index: 1;
 
           transition: background-color .2s ease-in-out;
-
-          background-color: rgba(255, 255, 255, .4);
         }
 
         .link-text {
@@ -99,23 +97,6 @@
   }
 
   .is-path-borger {
-
-    .flexy-navigation__item {
-
-      > a {
-
-        .behindor {
-          background-color: rgba($path-borger-color, .7);
-        }
-
-        &:hover {
-
-          .behindor {
-            background-color: $path-borger-color;
-          }
-        }
-      }
-    }
 
     .flexy-navigation__item--active {
 
@@ -133,23 +114,6 @@
   }
 
   .is-path-hr {
-
-    .flexy-navigation__item {
-
-      > a {
-
-        .behindor {
-          background-color: rgba($path-hr-color, .7);
-        }
-
-        &:hover {
-
-          .behindor {
-            background-color: $path-hr-color;
-          }
-        }
-      }
-    }
 
     .flexy-navigation__item--active {
 
