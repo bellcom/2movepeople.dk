@@ -15,7 +15,7 @@ $flexy-navigation-item-active-link-background-color: transparent !default;
 
 $flexy-navigation-item-dropdown-icon: $fa-var-angle-down !default;
 
-$flexy-navigation-spacing-left-right: floor( ($grid-gutter-width / 2) ) !default;
+$flexy-navigation-spacing-left-right: 20px;
 
 // Dropdown megamenu
 $flexy-navigation-item-dropdown-megamenu-spacing-top-bottom: floor( ( $grid-gutter-width / 2 ) ) !default;
