@@ -125,7 +125,6 @@ function custom_theme_preprocess_node(&$variables) {
   $user = $node->getOwner();
 }
 
-
 /**
  * Implements template_preprocess_user().
  */
