@@ -25,12 +25,59 @@
   .form-control {
     @extend .input-lg;
   }
+  select.form-control {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   .webform-actions {
 
     .btn {
       @extend .btn-block;
       @extend .btn-lg;
+    }
+  }
+
+  .panel {
+    border: 0;
+
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .panel-heading {
+    padding: 0;
+    border: 0;
+
+    background-color: transparent;
+
+    + .panel-body {
+      margin-top: $grid-gutter-width;
+    }
+  }
+  .panel-title {
+    font-size: $font-size-large;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight-bold;
+
+    color: $headings-color;
+  }
+  .panel-body {
+    padding: 0;
+  }
+
+  .form-type-checkbox {
+    padding-left: 30px;
+
+    label {
+      font-size: $font-size-h4;
+
+      color: $headings-color;
+    }
+
+    .help-block {
+      padding-left: 19px;
+
+      font-size: $font-size-extra-small;
     }
   }
 }
