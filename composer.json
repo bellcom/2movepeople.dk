@@ -23,7 +23,6 @@
         "drupal/admin_toolbar": "^1.27",
         "drupal/bootstrap": "^3.20",
         "drupal/console": "^1.0.2",
-        "drupal/core-recommended": "^8.8",
         "drupal/eck": "^1.0@alpha",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/linkit": "5.0-beta9",
@@ -35,13 +34,11 @@
         "drupal/twig_xdebug": "^1.1",
         "drupal/webform": "^5.4",
         "drush/drush": "^9.0.0",
+        "pear/archive_tar": "^1.4.5",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
         "zaporylie/composer-drupal-optimizations": "^1.0"
-    },
-    "require-dev": {
-        "webflo/drupal-core-require-dev": "^8.7.0"
     },
     "conflict": {
         "drupal/drupal": "*"
