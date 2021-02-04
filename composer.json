@@ -34,7 +34,7 @@
         "drupal/twig_xdebug": "^1.1",
         "drupal/webform": "^5.4",
         "drush/drush": "^9.0.0",
-        "pear/archive_tar": "^1.4.5",
+        "pear/archive_tar": "^1.4.12",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
